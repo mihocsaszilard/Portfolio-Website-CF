@@ -132,6 +132,11 @@ main {
   width: 75px;
 }
 
+.navigation-list li{
+  width: auto;
+  border-radius: 5px;
+}
+
 .navigation-list__item,
 .mobile-nav-list__item {
   color: #414463;
