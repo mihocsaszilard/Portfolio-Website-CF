@@ -204,18 +204,25 @@ main {
 
 .mobile-nav-list{
   background-color: var(--background-color);
-  width: 200px;
+  width: 350px;
+  height: 370px;
   text-align: right;
-  margin-top: -38px;
+  margin-top: -58px;
   padding-left: 0;
   border-radius: 0 0 0 25px  ;
   box-shadow: var(--medium-box-shadow);
+}
+
+.mobile-nav-list li{
+  margin-top: 20px;
 }
 
 .mobile-nav-list__item{
   text-align: right;
   padding-right: 55px;
   color: var(--red-highlight);
+  font-size: 48px;
+  border-bottom: 2px solid var(--deep-black);
 }
 
 .line,
@@ -245,7 +252,7 @@ main {
 #checkbox:checked ~ .mobile-nav-list {
    display: block;
    opacity: 1;
-   transform: translateX(-90px);
+   transform: translateX(-255px);
    position: relative;
    z-index: 5;
 }
