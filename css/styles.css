@@ -61,7 +61,6 @@ main {
 
 .page-header {
   display: flex;
-  padding: 0 20px;
   padding-top: 0;
   width: var(--complete-width);
   max-width: 100%;
@@ -85,7 +84,7 @@ main {
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
-  margin-right: 100px;
+  margin-right: 20px;
 }
 
 .navigation-list,
@@ -130,11 +129,13 @@ main {
   display: inline-block;
   margin-left: 15px;
   width: 75px;
-}
-
-.navigation-list li{
   width: auto;
   border-radius: 5px;
+}
+
+.navigation-list {
+  margin-right: 80px;
+  padding-left: 0;
 }
 
 .navigation-list__item,
