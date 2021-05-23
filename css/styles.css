@@ -63,12 +63,12 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: var(--bold-font);
+  font-weight: 300;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: var(--bold-font);
+  font-weight: 300;
 }
 
 p {
@@ -225,7 +225,7 @@ main {
 }
 
 .mobile-nav-list {
-  background-color: var(--background-color);
+  background-image: var(--background-color);
   width: 350px;
   height: 370px;
   text-align: right;
@@ -396,8 +396,8 @@ button:focus,
 .social-media-phone__icon {
   margin: 0 2px;
   border-radius: 5px;
-  background-color: var(--background-color);
-  box-shadow: 0 0 4px var(--background-color);
+  background-image: var(--background-color);
+  box-shadow: 0 0 2px white;
 }
 
 .svg-town {
@@ -669,7 +669,7 @@ button:focus,
   }
 
   .page__footer {
-    background-color: var(--menu-color);
+    background-image: var(--menu-color);
     clear: both;
     position: fixed;
     bottom: 0;
@@ -690,7 +690,7 @@ button:focus,
 
   .social-media-phone li {
     display: inline-block;
-    background-color: var(--menu-color);
+    background-image: var(--menu-color);
     padding: 0 5px;
   }
 
