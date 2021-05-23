@@ -376,7 +376,7 @@ button:focus,
   margin-bottom: 60px;
 }
 
-.social-media-phone-desktop {
+.social-media-desktop {
   text-align: center;
   position: fixed;
   bottom: 10%;
@@ -385,11 +385,11 @@ button:focus,
   font-size: 40px;
 }
 
-.social-media-phone-desktop ul {
+.social-media-desktop ul {
   padding-left: 5px;
 }
 
-.social-media-phone-desktop li {
+.social-media-desktop li {
   list-style-type: none;
 }
 
@@ -624,6 +624,11 @@ button:focus,
   .social-media-phone {
     display: none;
   }
+
+  .project-list {
+    grid-gap: 15px;
+    padding: 0 35px;
+  }
 }
 
 @media all and (max-width: 750px) {
@@ -689,7 +694,7 @@ button:focus,
     padding: 0 5px;
   }
 
-  .social-media-phone-desktop {
+  .social-media-desktop {
     display: none;
   }
 
