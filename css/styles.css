@@ -327,23 +327,33 @@ h3.main__paragraph {
 .toggler-row{
   text-align: center;
   margin: 0;
+  height: 50px;
   padding: 5px;
+  font-size: 40px;
 }
 
 .programmer-text{
   font-family: 'Inconsolata', monospace;
+  color: #F8BA5C;
 }
 
 .designer-text{
   font-family: 'Dancing Script', cursive;
+  color: #42B2C8;
 }
 
 .developer-text{
+  font-family: inherit;
+  color: #FF0000;
+}
 
+.located-icon{
+  height: 50px;
+  margin-bottom: -5px;
 }
 
 #text-wrapper {
-  height: 50px;
+  height: 65px;
   padding: 0;
   overflow: hidden;
   display: block;
@@ -351,11 +361,12 @@ h3.main__paragraph {
 
 #rotating-text span {
   padding: 15px 12px;
-  height: 45px;
+  height: 120px;
   margin-bottom: 45px;
   display: block;
-  width: 200px;
+  width: 360px;
   margin: 0 auto;
+  font-size: 52px;
 }
 
 #rotating-text {
@@ -365,31 +376,31 @@ h3.main__paragraph {
 
 @keyframes rotate {
     0% {
-        transform: translateY(-200px);
+        transform: translateY(-400px);
     }
 
     5% {
-        transform: translateY(-109px);
+        transform: translateY(-275px);
     }
 
     33% {
-        transform: translateY(-109px);
+        transform: translateY(-265px);
     }
 
     38% {
-        transform: translateY(-64px);
+        transform: translateY(-155px);
     }
 
     66% {
-        transform: translateY(-64px);
+        transform: translateY(-145px);
     }
 
     71% {
-        transform: translateY(-19px);
+        transform: translateY(-34px);
     }
 
     99.9% {
-        transform: translateY(-19px);
+        transform: translateY(-24px);
     }
 
     100% {
@@ -750,8 +761,6 @@ button:focus,
 
   .profile {
     align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
     padding-bottom: 60px;
   }
 
@@ -766,6 +775,11 @@ button:focus,
 
   h1 {
     font-size: 22px;
+  }
+
+  .toggler-row{
+    font-size: 28px;
+    padding: 0;
   }
 
   .page__footer {
@@ -798,7 +812,7 @@ button:focus,
   }
 
   .main__heading {
-    font-size: 60px;
+    font-size: 44px;
   }
 
   .navigation-list {
