@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mihocsa Szilard - Portfolio</title>
   <link rel="shortcut icon" href="./img/favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
   <!--<link rel="stylesheet" type="text/css" href="css/style.production.css">-->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -70,9 +73,22 @@
       </label>
       <div class="profile__content">
         <h1 class="main__heading">Hello World!</h1>
-        <p class="main__paragraph">
-          My name in Mihocsa Szilard. I am a <span>web</span> developer from Germany.
-        </p>
+        <h3 class="main__paragraph">
+          My name in Mihocsa Szilard.
+        </h3>
+        <div class="toggler">
+          <h3 class="static-text toggler-row">I am a web</h3>
+          <p class="main__paragraph toggler-row" id="text-wrapper">
+            <span id="rotating-text">
+              <span class="developer-text">Developer</span>
+              <span class="designer-text">Designer</span>
+              <span class="programmer-text">&ltprogrammer&gt</span>
+            </span>
+              <h3 class="toggler-row">currently in Germany.</h3>
+          </p>
+        </div>
+      </div>
+      <div class="button-container">
         <a class="button" href="contact.html">Let`s talk!</a>
         <a class="button button__secondary" href="work.html">Check out some of my code</a>
       </div>
