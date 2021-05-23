@@ -5,8 +5,16 @@
  width="866.000000pt" height="291.000000pt" viewBox="0 0 866.000000 291.000000"
  preserveAspectRatio="xMidYMid meet">
 
+  <defs>
+    <linearGradient id="Gradient1">
+    <stop offset="0%" stop-color="#AA9FAA"/>
+    <stop offset="10%" stop-color="#AA9FAA" stop-opacity=".8"/>
+    <stop offset="100%" stop-color="#AA9FAA"/>
+  </linearGradient>
+  </defs>
+
 <g transform="translate(0.000000,291.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="url(#Gradient1)" stroke="none">
 <path d="M2100 2410 c-14 -4 -66 -8 -115 -9 -107 -1 -135 -14 -193 -84 -21
 -26 -48 -54 -59 -62 -25 -17 -108 -141 -133 -197 -10 -24 -23 -78 -29 -121
 -12 -89 -13 -262 -2 -291 7 -17 -11 -155 -22 -174 -5 -8 -21 -209 -21 -257 1
@@ -132,4 +140,5 @@ c-8 81 -60 337 -83 414 l-19 60 -86 3 -87 3 -20 -68z m128 -215 c1 -24 -3 -28
 -25 -28 -26 0 -26 1 -20 53 4 28 10 63 14 77 5 22 8 18 18 -25 7 -27 13 -62
 13 -77z"/>
 </g>
+
 </svg>
