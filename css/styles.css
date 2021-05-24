@@ -41,14 +41,13 @@ body {
   background-image: var(--background-color);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: var(--text-color);
+  color: #C7BFC6;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
   max-width: 1500px;
   margin: auto;
-
   text-align: center;
 }
 
@@ -58,7 +57,8 @@ h1 {
   font-weight: 700;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding-left: 5px;
+  padding: 30px;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -73,7 +73,7 @@ h3 {
 }
 
 p {
-  color: var(--text-color);
+  color: #AA9FAA;
 }
 
 main {
@@ -300,6 +300,7 @@ main {
   font-size: 90px;
   font-weight: 300;
   margin: 10px 0;
+  padding: 0;
 }
 
 .main__paragraph {
@@ -686,9 +687,15 @@ button:focus,
   max-width: 1000px;
   margin: auto;
   margin-bottom: 70px;
-  padding: 20px 0;
+  padding-bottom: 20px;
+  padding-top: 0;
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.about-me__item{
+  padding: 10px 40px;
+
 }
 
 .table-header-x {
