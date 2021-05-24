@@ -48,7 +48,7 @@ body {
   line-height: 1.6;
   max-width: 1500px;
   margin: auto;
-  margin-top: 0;
+
   text-align: center;
 }
 
@@ -105,7 +105,6 @@ main {
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
-  margin-right: 20px;
 }
 
 .navigation-list,
@@ -118,7 +117,7 @@ main {
 .navigation-list__item:after {
   position: absolute;
   width: var(--complete-width);
-  height: 2px;
+  height: 1px;
   background: #000;
   content: "";
   padding-right: 2px;
@@ -129,14 +128,16 @@ main {
 .navigation-list__item:before {
   top: 0px;
   transform: translateY(50px);
-  width: 47px;
+  width: auto;
 }
 
 .navigation-list__item:after {
   bottom: 0px;
-  transform: translateY(-25px);
-  width: 47px;
-  margin-left: -48.5px;
+  display: flex;
+  flex-direction: row-reverse;
+  transform: translateY(-5px);
+  width: 100%;
+  background-color: #392038;
 }
 
 .navigation-list__item:hover:before,
@@ -149,7 +150,6 @@ main {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
-  width: 75px;
   width: auto;
   border-radius: 5px;
 }
@@ -193,7 +193,6 @@ main {
 }
 
 #menu-toggle input {
-  z-index: 1;
   display: block;
   width: 40px;
   height: 40px;
@@ -362,7 +361,6 @@ h3.main__paragraph {
 #rotating-text span {
   padding: 15px 12px;
   height: 120px;
-  margin-bottom: 45px;
   display: block;
   width: 360px;
   margin: 0 auto;
@@ -416,7 +414,6 @@ button,
   display: inline-block;
   background-color: #9fe0b1;
   border: none;
-  border-bottom: 2px var(--deep-black);
   /* fallback color*/
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 5px;
