@@ -42,7 +42,7 @@ html {
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 1px;
+    width: 0;
       /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
@@ -240,12 +240,11 @@ main {
 
 .mobile-nav-list {
   background-image: var(--background-color);
-  width: 350px;
-  height: 370px;
+  width: 400px;
+  height: 390px;
   text-align: right;
   margin-top: -58px;
   padding-left: 0;
-  border-radius: 0 0 0 25px;
   box-shadow: var(--medium-box-shadow);
 }
 
@@ -258,7 +257,7 @@ main {
   padding-right: 55px;
   color: var(--heading-color);
   font-size: 48px;
-  border-bottom: 2px solid var(--deep-black);
+  border-bottom: 1px solid rgb(66, 178, 200);
 }
 
 .line,
@@ -288,7 +287,7 @@ main {
 #checkbox:checked~.mobile-nav-list {
   display: block;
   opacity: 1;
-  transform: translateX(-255px);
+  transform: translate3d(-320px, 0px, 150px);
   position: relative;
   z-index: 5;
 }
@@ -296,7 +295,7 @@ main {
 #checkbox~.mobile-nav-list {
   display: block;
   opacity: 0;
-  transform: translateX(75px);
+  transform: translate3d(150px, -250px, -50px);
 }
 
 /*------------------mobile nav end----------*/
