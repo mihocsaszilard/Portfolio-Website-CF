@@ -289,11 +289,11 @@ main {
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .button-container a {
-  z-index: -1;
+  z-index: 1;
 }
 
 .main__heading {
@@ -323,12 +323,17 @@ h3.main__paragraph {
   color: #000000;
 }
 
-.toggler-row{
+.toggler-row,
+.toggler-location-row{
   text-align: center;
   margin: 0;
   height: 50px;
   padding: 5px;
   font-size: 40px;
+}
+
+.toggler-location-row{
+  margin-top: 40px;
 }
 
 .programmer-text{
@@ -774,7 +779,7 @@ button:focus,
     font-size: 22px;
   }
 
-  .toggler-row{
+  .toggler-location-row{
     font-size: 28px;
     padding: 0;
   }
