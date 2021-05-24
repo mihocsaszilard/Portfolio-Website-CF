@@ -809,9 +809,21 @@ button:focus,
     margin-left: 0;
   }
 
+  body{
+    position: relative;
+    z-index: -1;  /*placed behind the profile picture to be able to click that*/
+  }
+
+  .section-one{
+    position: relative;
+    z-index: -1; /*placed behind the profile picture to be able to click that*/
+  }
+
   .profile {
     align-items: center;
     padding-bottom: 100px;
+    position: relative;
+    z-index: -1; /*placed behind the profile picture to be able to click that*/
   }
 
   .profile__picture-wrapper {
@@ -820,7 +832,12 @@ button:focus,
     justify-content: center;
     position: relative;
     background-image: url(../img/profile-picture-static-phone.svg);
-    z-index: 1;
+    z-index: 2; /* placed forward*/
+  }
+
+  .mobile-nav-list__item,
+  ul.mobile-nav-list li{
+    z-index: 2;
   }
 
   .button{
