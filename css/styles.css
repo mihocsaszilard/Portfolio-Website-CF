@@ -317,6 +317,11 @@ main {
   padding: 0;
 }
 
+.name-highlight{
+  color: #1D001B;
+  text-shadow: -1px -1px 0 rgb(66, 178, 200), 1px -1px 0 rgb(66, 178, 200), -1px 1px 0 rgb(66, 178, 200), 1px 1px 0 rgb(66, 178, 200);
+}
+
 .main__paragraph {
   font-size: var(--big-font-size);
   padding: 0 30px;
@@ -436,12 +441,10 @@ h3.main__paragraph {
 button,
 .button {
   display: inline-block;
-  background-color: #9fe0b1;
-  border: none;
-  /* fallback color*/
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  color: var(--deep-black);
+  border: .5px solid #726071;
+  box-shadow: 1px 1px #726071, inset 1px 1px #C7BFC6;
+  color: #C7BFC6;
+  width: 220px;
   font-family: inherit;
   font-weight: 400;
   padding: 10px;
@@ -460,8 +463,13 @@ button:focus,
   box-shadow: var(--medium-box-shadow);
 }
 
-.button__secondary {
-  background-color: #f7cf92;
+.button__prymary {
+  background-color: rgba(66, 178, 200, .4);
+  border: .5px solid #42B2C8;
+}
+
+.button__secondary{
+  border: .5px solid ;
 }
 
 .button-img {
@@ -793,6 +801,7 @@ button:focus,
 }
 
 @media all and (max-width: 750px) {
+
   .project-list {
     grid-gap: 10px;
   }
