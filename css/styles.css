@@ -900,6 +900,10 @@ button:focus,
 */
 @media all and (max-width: 500px) {
 
+#rotating-text span{
+  font-size: 42px;
+}
+
 .project-list {
   grid-gap: 10px;
   -ms-grid-columns: 1fr;
@@ -1021,8 +1025,6 @@ h1 {
 .navigation-list__item:after {
   display: none;
 }
-
-
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
