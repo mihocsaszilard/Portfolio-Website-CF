@@ -903,6 +903,8 @@ button:focus,
 #rotating-text span{
   font-size: 42px;
   width: 280px;
+  padding-left: 0;
+  margin-right: 5px;
 }
 
 .project-list {
