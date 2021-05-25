@@ -928,6 +928,7 @@ button:focus,
 body {
   position: relative;
   z-index: 1;
+  background-color:rgb(29, 0, 27);
   /*placed behind the profile picture to be able to click that*/
 }
 
