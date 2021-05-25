@@ -820,12 +820,7 @@ button:focus,
 /*
 ------------------Contact form end----------
 */
-.project-list__item {
-  display: inline-block;
-  width: auto;
-}
 
-/*end fallback*/
 @supports (display: grid) {
   .project-list {
     display: grid;
@@ -834,37 +829,72 @@ button:focus,
     /*grid-template-rows: 300px 300px;*/
     margin: 0;
     margin-bottom: 70px;
-
   }
 
-  .project-list__item{
-    max-width: 50%;
+  .project-details{
+    margin-left: -15%;
+    text-align: left;
+  }
+
+  .project-list__item {
+    max-width: 70%;
+    height: 80%;
     margin-bottom: 30px;
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
 
-  .omnifood{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9)), url(../img/omnifood.jpg);
+  .omnifood {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/omnifood.jpg);
     background-position: center;
     background-size: cover;
     transition: all 1s ease-in-out;
     box-shadow: 5px 5px 10px #1D001B;
+    padding-bottom: 10%;
   }
 
-  .project-list__item:hover{
-     margin-left: 5vw;
-     margin-right: 5vw;
-     max-width: 80%;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.9)), url(../img/omnifood.jpg);
+  .omnifood-heading{
+    margin-top: 10%;
+    font-size: 38px;
   }
 
-  .project-title{
-   margin-top: 50%;
-   font-size: 42px;
+  .project-list__item:hover {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 80%;
+    height: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/omnifood.jpg);
+  }
+
+  .project-title {
+    margin-top: 20%;
+    font-size: 42px;
+  }
+
+  .project-button {
+    font-size: 22px;
+    background: transparent;
+    margin-bottom: 10%;
+    width:40%;
   }
 
   .project-description{
-  font-size: 32px;
+    font-size: 20px;
+    width: 125%;
   }
+
+  .project-description:first-child {
+    margin-top: 50%;
+    margin-bottom: 10%;
+  }
+
+  .project-img img{
+    height: 50px;
+    margin: 15px;
+    margin-bottom: 35px;
+    opacity: .8;
+  }
+
 }
 
 .about-me,
@@ -892,7 +922,7 @@ button:focus,
 }
 
 .section-two {
-  z-index: 0;
+  z-index: -10;
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
@@ -941,6 +971,9 @@ button:focus,
   .contact-form-wrapper {
     margin-top: -40px;
   }
+  .project-description img {
+    height: 30px;
+  }
 
 }
 
@@ -985,14 +1018,25 @@ button:focus,
     grid-template-columns: 1fr;
   }
 
-  .project-list__item{
+  .project-list__item {
     max-width: 100%;
     transition: none;
+    margin-bottom: 0;
   }
 
-  .project-list__item:hover{
+  .project-list__item:hover {
     max-width: 100%;
     margin: 0;
+  }
+
+  .project-img img{
+    height: 30px;
+  }
+
+  .project-details{
+    margin-top: -50%;
+    margin-bottom: 20%;
+    border-bottom: 1px solid white;
   }
 
   .page-header {
