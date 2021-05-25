@@ -353,10 +353,11 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  z-index: 2;
 }
 
 .button-container a {
-  z-index: 1;
+  z-index: 2;
 }
 
 .main__heading {
@@ -502,6 +503,7 @@ button,
   opacity: .8;
   transition: opacity .3s, box-shadow .3s ease-in-out;
   margin: 0 10px;
+  z-index: 6;
 }
 
 button:hover,
@@ -761,7 +763,6 @@ button:focus,
   position: absolute;
   width: 100%;
   max-width: 600px;
-
 }
 
 .form-control:nth-child(2){
@@ -793,6 +794,7 @@ button:focus,
 }
 
 .button__submit {
+  z-index: 1;
   padding: 5px 75px;
   margin-top: 20px;
   background-color: inherit;
@@ -928,6 +930,12 @@ button:focus,
 }
 
 @media all and (min-width: 750px) {
+
+body{
+  position: relative;
+  z-index: -111;
+}
+
   #menu-toggle {
     display: none;
   }
