@@ -1111,30 +1111,130 @@ button:focus {
 --------------------Media Queries-------------------
 */
 @media all and (max-width: 500px) {
-  .project-list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
 
-  .button-container {
-    display: -ms-grid;
-    display: grid;
-  }
+.project-list {
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
 
-  .button {
-    width: 100%;
-    display: block;
-    margin: 5px;
-  }
+.project-list__item:last-child,
+.project-list__full-row-item {
+  grid-column: auto / auto;
+  grid-row: auto / auto;
+}
 
-  h1.main__heading {
-    font-size: 34px;
-  }
+.personal-logo {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+}
 
-  #rotating-text span {
-    font-size: 40px;
-    width: 100%;
-  }
+body {
+  position: relative;
+  z-index: -1;
+  /*placed behind the profile picture to be able to click that*/
+}
+
+.section-one {
+  position: relative;
+  z-index: -1;
+  /*placed behind the profile picture to be able to click that*/
+}
+
+.profile {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: -1;
+  /*placed behind the profile picture to be able to click that*/
+}
+
+.profile__picture-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background-image: url(../img/profile-picture-static-phone.svg);
+  z-index: 2;
+  /* placed forward*/
+}
+
+.mobile-nav-list__item,
+ul.mobile-nav-list li {
+  z-index: 2;
+}
+
+.button {
+  font-size: 90%;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+.toggler-location-row {
+  font-size: 28px;
+  padding: 0;
+}
+
+.page__footer {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(29, 0, 27, .1)), to(rgba(29, 0, 27, 1)));
+  background-image: -o-linear-gradient(right, rgba(29, 0, 27, .1), rgba(29, 0, 27, 1));
+  background-image: linear-gradient(to left, rgba(29, 0, 27, .1), rgba(29, 0, 27, 1));
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100%;
+  height: 60px;
+}
+
+.page__footer-text {
+  margin: 0;
+  color: #E3DFE3;
+}
+
+.social-media-phone ul {
+  padding: 0;
+}
+
+.social-media-phone li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.social-media-desktop {
+  display: none;
+}
+
+.main__heading {
+  font-size: 44px;
+}
+
+.navigation-list {
+  display: none;
+}
+
+#menu-toggle {
+  position: absolute;
+  right: 30px;
+  top: 88px;
+}
+
+.navigation-list__item:before,
+.navigation-list__item:after {
+  display: none;
+}
+
+
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
