@@ -100,7 +100,6 @@ main {
 }
 
 /*-------------------CUSTOM CURSOR-----------------*/
-
 /*.cursor {
   width: 25px;
   height: 25px;
@@ -138,7 +137,6 @@ main {
   border-radius: 50%;
   transition: 0.5s ease-out;
 }*/
-
 /*----------------custom cursor end------------------*/
 .page-header {
   display: flex;
@@ -707,15 +705,13 @@ button:focus,
 /*
 ------------------Contact form----------
 */
-
-.information{
+.information {
   display: inline-block;
   align-items: center;
 }
 
-.cover-photo{
+.cover-photo {
   width: 100%;
-
 }
 
 .contact-form-wrapper {
@@ -724,13 +720,13 @@ button:focus,
   height: 600px;
   margin: auto;
   align-items: center;
-  background-color: rgba(255,255,255, .1);
+  background-color: rgba(255, 255, 255, .1);
   border-radius: 25px 25px 0 0;
   z-index: -1;
   position: relative;
 }
 
-.contact-element{
+.contact-element {
   width: 75%;
   height: 40px;
   margin: 10px 0;
@@ -739,10 +735,9 @@ button:focus,
   background: #392038;
   border: none;
   border-bottom: 1px solid rgba(66, 178, 200, .5);
-
 }
 
-.contact-element::placeholder{
+.contact-element::placeholder {
   color: rgb(66, 178, 200);
   font-size: 16px;
   font-weight: 300;
@@ -750,7 +745,7 @@ button:focus,
   text-align: left;
 }
 
-.contact-form-mail{
+.contact-form-mail {
   height: 60px;
   width: auto;
 }
@@ -765,23 +760,23 @@ button:focus,
   max-width: 600px;
 }
 
-.form-control:nth-child(2){
+.form-control:nth-child(2) {
   margin-top: 70px;
 }
 
-.form-control:nth-child(3){
+.form-control:nth-child(3) {
   margin-top: 140px;
 }
 
-.form-control:nth-child(4){
+.form-control:nth-child(4) {
   margin-top: 210px;
 }
 
-.form-control:nth-child(5){
+.form-control:nth-child(5) {
   margin-top: 280px;
 }
 
-.form-control:nth-child(6){
+.form-control:nth-child(6) {
   margin-top: 350px;
 }
 
@@ -789,7 +784,7 @@ button:focus,
   flex: 0 1 200px;
 }
 
-.standard-label{
+.standard-label {
   text-align: left;
 }
 
@@ -800,22 +795,24 @@ button:focus,
   background-color: inherit;
   border: none;
   box-shadow: none;
-  animation:  send 1.5s infinite;
+  animation: send 1.5s infinite;
 }
 
 .button__submit:hover,
-.button__submit:active{
+.button__submit:active {
   box-shadow: none;
 }
 
 @keyframes send {
-  0%{
+  0% {
     transform: translate3d(-5px, 5px, 2px);
   }
-  80%{
+
+  80% {
     transform: translate3d(5px, -5px, -2px);
   }
-  100%{
+
+  100% {
     transform: translate3d(-5px, 5px, 2px);
   }
 }
@@ -823,10 +820,9 @@ button:focus,
 /*
 ------------------Contact form end----------
 */
-/*fallback*/
 .project-list__item {
   display: inline-block;
-  width: 33%;
+  width: auto;
 }
 
 /*end fallback*/
@@ -834,29 +830,40 @@ button:focus,
   .project-list {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     /*grid-template-rows: 300px 300px;*/
     margin: 0;
     margin-bottom: 70px;
+
   }
 
-  .project-list__item {
-    background-color: rgba(104, 12, 6, 0.1);
-    border-radius: 10px;
-    min-height: auto;
-    margin: 0;
-    padding: 0 5px;
-    width: auto;
+  .project-list__item{
+    max-width: 50%;
+    margin-bottom: 30px;
   }
 
-  .project-list__item:last-child {
-    grid-column: 3/3;
-    grid-row: 1/3;
+  .omnifood{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9)), url(../img/omnifood.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    box-shadow: 5px 5px 10px #1D001B;
   }
 
-  .project-list__full-row-item {
-    grid-column: 1/4;
-    grid-row: 3/3;
+  .project-list__item:hover{
+     margin-left: 5vw;
+     margin-right: 5vw;
+     max-width: 80%;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.9)), url(../img/omnifood.jpg);
+  }
+
+  .project-title{
+   margin-top: 50%;
+   font-size: 42px;
+  }
+
+  .project-description{
+  font-size: 32px;
   }
 }
 
@@ -899,63 +906,56 @@ button:focus,
 --------------------Media Queries-------------------
 */
 @media all and (max-width: 500px) {
+  #rotating-text span {
+    font-size: 42px;
+    width: 280px;
+    padding-left: 0;
+    margin-right: 5px;
+  }
 
-#rotating-text span{
-  font-size: 42px;
-  width: 280px;
-  padding-left: 0;
-  margin-right: 5px;
-}
+  .main__heading {
+    margin-bottom: 50px;
+  }
 
-.main__heading{
-  margin-bottom: 50px;
-}
+  body {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(29, 0, 27);
+    /*placed behind the profile picture to be able to click that*/
+  }
 
-body {
-  position: relative;
-  z-index: 1;
-  background-color: rgb(29, 0, 27);
-  /*placed behind the profile picture to be able to click that*/
-}
+  .profile__picture-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(../img/profile-picture-static-phone.svg);
+    z-index: 2;
+    /* placed forward*/
+  }
 
-.profile__picture-wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  background-image: url(../img/profile-picture-static-phone.svg);
-  z-index: 2;
-  /* placed forward*/
-}
-
-.contact-form-wrapper{
-  margin-top: -40px;
-}
-
-.project-list{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  .contact-form-wrapper {
+    margin-top: -40px;
+  }
 
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
-    -ms-grid-columns: 1fr 10px 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 @media all and (min-width: 750px) {
-
-body{
-  position: relative;
-  z-index: 1;
-}
+  body {
+    position: relative;
+    z-index: 1;
+  }
 
   #menu-toggle {
     display: none;
@@ -981,16 +981,21 @@ body{
 
 @media all and (max-width: 750px) {
   .project-list {
-    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .project-list__item:last-child,
-  .project-list__full-row-item {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
+  .project-list__item{
+    max-width: 100%;
+    transition: none;
   }
 
-  .page-header{
+  .project-list__item:hover{
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .page-header {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(29, 0, 27, 1)), to(rgba(29, 0, 27, 1)));
     background-image: -o-linear-gradient(right, rgba(29, 0, 27, 1), rgba(29, 0, 27, 1));
     background-image: linear-gradient(to left, rgba(29, 0, 27, 1), rgba(29, 0, 27, 1));
@@ -1016,8 +1021,8 @@ body{
 
   .profile {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-bottom: 120px;
     position: relative;
     z-index: -1;
@@ -1031,8 +1036,8 @@ body{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: relative;
     background-image: url(../img/profile-picture-static-phone.svg);
     z-index: 2;
