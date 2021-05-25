@@ -38,17 +38,20 @@ Main Headline color (Black): #171717;
 }
 
 html {
-    overflow: scroll;
-    overflow-x: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-    width: 0;
-      /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
 }
+
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+  background: #FF0000;
 }
 
 body {
@@ -63,14 +66,14 @@ body {
   max-width: 100vw;
   margin: auto 10%;
   text-align: center;
+  /*cursor: none;*/
 }
 
 h1 {
   color: var(--heading-color);
   font-size: var(--big-font-size);
   font-weight: 700;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-bottom: 1px solid rgb(66, 178, 200);
   padding: 30px;
   padding-bottom: 10px;
 }
@@ -94,6 +97,47 @@ main {
   margin: 40px 20px 0 20px;
 }
 
+/*-------------------CUSTOM CURSOR-----------------*/
+
+/*.cursor {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid black;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 50%;
+}
+
+.cursor-lazy {
+  width: 5px;
+  height: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+  top: 0;
+  left: 0;
+  transition: 0.01s ease-out;
+}
+
+.cursor:hover,
+.cursor:active,
+.cursor::after,
+.cursor::before{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid black;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 50%;
+  transition: 0.5s ease-out;
+}*/
+
+/*----------------custom cursor end------------------*/
 .page-header {
   display: flex;
   padding-top: 0;
@@ -299,6 +343,10 @@ main {
 }
 
 /*------------------mobile nav end----------*/
+/*
+----------------------PARALLAX effect-------------------
+*/
+/*-------------------PARALLAX effect end----------------*/
 .button-container {
   display: flex;
   justify-content: center;
@@ -314,9 +362,10 @@ main {
   font-weight: 300;
   margin: 10px 0;
   padding: 0;
+  border: 0;
 }
 
-.name-highlight{
+.name-highlight {
   color: #1D001B;
   text-shadow: -1px -1px 0 rgb(66, 178, 200), 1px -1px 0 rgb(66, 178, 200), -1px 1px 0 rgb(66, 178, 200), 1px 1px 0 rgb(66, 178, 200);
 }
@@ -343,7 +392,7 @@ h3.main__paragraph {
 }
 
 .toggler-row,
-.toggler-location-row{
+.toggler-location-row {
   text-align: center;
   display: block;
   height: 50px;
@@ -351,30 +400,30 @@ h3.main__paragraph {
   font-size: 40px;
 }
 
-.toggler-location-row{
+.toggler-location-row {
   margin-top: 40px;
 }
 
-.static-text{
+.static-text {
   margin: 0;
 }
 
-.programmer-text{
+.programmer-text {
   font-family: 'Inconsolata', monospace;
   color: #F8BA5C;
 }
 
-.designer-text{
+.designer-text {
   font-family: 'Dancing Script', cursive;
   color: #42B2C8;
 }
 
-.developer-text{
+.developer-text {
   font-family: inherit;
   color: #FF0000;
 }
 
-.located-icon{
+.located-icon {
   height: 50px;
   margin-bottom: -5px;
 }
@@ -396,42 +445,42 @@ h3.main__paragraph {
 }
 
 #rotating-text {
-    display: block;
-    animation: rotate 5s linear infinite;
+  display: block;
+  animation: rotate 5s linear infinite;
 }
 
 @keyframes rotate {
-    0% {
-        transform: translateY(-400px);
-    }
+  0% {
+    transform: translateY(-400px);
+  }
 
-    5% {
-        transform: translateY(-275px);
-    }
+  5% {
+    transform: translateY(-275px);
+  }
 
-    33% {
-        transform: translateY(-265px);
-    }
+  33% {
+    transform: translateY(-265px);
+  }
 
-    38% {
-        transform: translateY(-155px);
-    }
+  38% {
+    transform: translateY(-155px);
+  }
 
-    66% {
-        transform: translateY(-145px);
-    }
+  66% {
+    transform: translateY(-145px);
+  }
 
-    71% {
-        transform: translateY(-34px);
-    }
+  71% {
+    transform: translateY(-34px);
+  }
 
-    99.9% {
-        transform: translateY(-24px);
-    }
+  99.9% {
+    transform: translateY(-24px);
+  }
 
-    100% {
-        transform: translateY(-200px);
-    }
+  100% {
+    transform: translateY(-200px);
+  }
 }
 
 /*
@@ -467,8 +516,8 @@ button:focus,
   border: .5px solid #42B2C8;
 }
 
-.button__secondary{
-  border: .5px solid ;
+.button__secondary {
+  border: .5px solid;
 }
 
 .button-img {
@@ -522,7 +571,6 @@ button:focus,
 
 .social-media-desktop ul {
   padding-left: 5px;
-
 }
 
 .social-media-desktop li {
@@ -655,19 +703,114 @@ button:focus,
 /*
 ------------------Contact form----------
 */
+
+.information{
+  display: inline-block;
+  align-items: center;
+}
+
+.cover-photo{
+  width: 100%;
+
+}
+
+.contact-form-wrapper {
+  width: 100%;
+  max-width: 750px;
+  height: 600px;
+  margin: auto;
+  align-items: center;
+  background-color: rgba(255,255,255, .1);
+  border-radius: 25px 25px 0 0;
+}
+
+.contact-element{
+  width: 75%;
+  height: 40px;
+  margin: 10px 0;
+  text-align: left;
+  padding-left: 15px;
+  background: #392038;
+  border: none;
+  border-bottom: 1px solid rgba(66, 178, 200, .5);
+
+}
+
+.contact-element::placeholder{
+  color: rgb(66, 178, 200);
+  font-size: 16px;
+  font-weight: 300;
+  opacity: .5;
+  text-align: left;
+}
+
+.contact-form-mail{
+  height: 60px;
+  width: auto;
+}
+
 .form-control {
-  display: flex;
-  margin: 5px 0;
-  width: var(--complete-width);
-  justify-content: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-control:nth-child(2){
+  margin-top: 70px;
+}
+
+.form-control:nth-child(3){
+  margin-top: 140px;
+}
+
+.form-control:nth-child(4){
+  margin-top: 210px;
+}
+
+.form-control:nth-child(5){
+  margin-top: 280px;
+}
+
+.form-control:nth-child(6){
+  margin-top: 350px;
 }
 
 .form-element {
   flex: 0 1 200px;
 }
 
+.standard-label{
+  text-align: left;
+}
+
 .button__submit {
   padding: 5px 75px;
+  margin-top: 20px;
+  background-color: inherit;
+  border: none;
+  box-shadow: none;
+  animation:  send 1.5s infinite;
+}
+
+.button__submit:hover,
+.button__submit:active{
+  box-shadow: none;
+}
+
+@keyframes send {
+  0%{
+    transform: translate3d(-5px, 5px, 2px);
+  }
+  80%{
+    transform: translate3d(5px, -5px, -2px);
+  }
+  100%{
+    transform: translate3d(-5px, 5px, 2px);
+  }
 }
 
 /*
@@ -721,9 +864,8 @@ button:focus,
   grid-template-columns: 1fr;
 }
 
-.about-me__item{
+.about-me__item {
   padding: 10px 40px;
-
 }
 
 .table-header-x {
@@ -735,7 +877,7 @@ button:focus,
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.section-two{
+.section-two {
   z-index: 2;
   width: 100vw;
   position: relative;
@@ -797,10 +939,13 @@ button:focus,
     grid-gap: 15px;
     padding: 0 35px;
   }
+
+  .contact-form-wrapper {
+    height: 700px;
+  }
 }
 
 @media all and (max-width: 750px) {
-
   .project-list {
     grid-gap: 10px;
   }
@@ -817,21 +962,24 @@ button:focus,
     margin-left: 0;
   }
 
-  body{
+  body {
     position: relative;
-    z-index: -1;  /*placed behind the profile picture to be able to click that*/
+    z-index: -1;
+    /*placed behind the profile picture to be able to click that*/
   }
 
-  .section-one{
+  .section-one {
     position: relative;
-    z-index: -1; /*placed behind the profile picture to be able to click that*/
+    z-index: -1;
+    /*placed behind the profile picture to be able to click that*/
   }
 
   .profile {
     align-items: center;
     padding-bottom: 100px;
     position: relative;
-    z-index: -1; /*placed behind the profile picture to be able to click that*/
+    z-index: -1;
+    /*placed behind the profile picture to be able to click that*/
   }
 
   .profile__picture-wrapper {
@@ -840,15 +988,16 @@ button:focus,
     justify-content: center;
     position: relative;
     background-image: url(../img/profile-picture-static-phone.svg);
-    z-index: 2; /* placed forward*/
+    z-index: 2;
+    /* placed forward*/
   }
 
   .mobile-nav-list__item,
-  ul.mobile-nav-list li{
+  ul.mobile-nav-list li {
     z-index: 2;
   }
 
-  .button{
+  .button {
     font-size: 90%;
   }
 
@@ -856,7 +1005,7 @@ button:focus,
     font-size: 22px;
   }
 
-  .toggler-location-row{
+  .toggler-location-row {
     font-size: 28px;
     padding: 0;
   }

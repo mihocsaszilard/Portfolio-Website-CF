@@ -19,6 +19,29 @@
 </head>
 
 <body>
+
+<!--
+  <div class="cursor"></div>
+  <div class="cursor-lazy"></div>
+  <script type="text/javascript">
+    "use strict";
+    (function(){
+      var cursor = document.querySelector('.cursor');
+      var cursorLazy = document.querySelector('.cursor-lazy');
+      var links = document.querySelector('.cursor-hover');
+
+      var editCursor = function editCursor(event){
+        cursor.style.left = event.clientX + 'px';
+        cursor.style.top = event.clientY + 'px';
+        cursorLazy.style.left = event.clientX + 'px';
+        cursorLazy.style.top = event.clientY + 'px';
+      }
+
+      window.addEventListener('mousemove', editCursor);
+    })();
+  </script>-->
+</div>
+
   <!-- Header including the logo and the main navigation -->
   <header class="page-header">
     <!-- your logo here -->
@@ -72,10 +95,10 @@
         <!--<img class="profile__picture-static" src="img/profile-picture-static.png" alt="Mihocsa Szilard Portrait">-->
         <img class="profile__picture-animated profile__picture-static" src="img/profile-picture-animation.gif" alt="Mihocsa Szilard Portrait">
       </label>
+
       <div class="profile__content">
         <h1 class="main__heading">Hello! I`m <span class="name-highlight">Mihocsa Szilard</span>,</h1>
-
-        <div class="toggler">
+        <div class="toggler ">
           <h3 class="static-text toggler-row"></h3>
           <div class="main__paragraph" id="text-wrapper">
             <span id="rotating-text">
@@ -141,12 +164,11 @@
         <li>
           <a href="https://www.linkedin.com/in/mihocsaszilard/" target="_blank">
             <img class="social-media-phone__icon" src="img/linkedin.svg" alt="LinkedIn">
+          </a>
         </li>
       </ul>
     </div>
   </footer>
-
-
 
   <script src="js/tota11y.min.js"></script>
 </body>
