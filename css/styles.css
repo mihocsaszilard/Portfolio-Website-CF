@@ -55,7 +55,7 @@ html {
 }
 
 body {
-  background-image: var(--background-color);
+  background-image: linear-gradient(to bottom right, rgba(29, 0, 27, .9), rgba(29, 0, 27, 1));
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #C7BFC6;
