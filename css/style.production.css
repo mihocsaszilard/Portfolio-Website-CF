@@ -94,9 +94,7 @@ p {
 }
 
 main {
-  position: relative;
   margin: 40px 20px 0 20px;
-  z-index: -2;
 }
 
 /*-------------------CUSTOM CURSOR-----------------*/
@@ -869,8 +867,6 @@ button:focus {
           align-items: center;
   background-color: rgba(255,255,255, .1);
   border-radius: 25px 25px 0 0;
-  z-index: -1;
-  position: relative;
 }
 
 .contact-element{
@@ -938,7 +934,6 @@ button:focus {
   position: absolute;
   width: 100%;
   max-width: 600px;
-
 }
 
 .form-control:nth-child(2){
