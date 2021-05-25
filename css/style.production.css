@@ -688,7 +688,7 @@ button:focus {
 /*------------Profile Picture animation end--------------*/
 .profile {
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 .social-media-desktop {
@@ -1095,7 +1095,7 @@ button:focus {
 }
 
 .section-two {
-  z-index: 2;
+  z-index: 0;
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
@@ -1112,43 +1112,21 @@ button:focus {
 */
 @media all and (max-width: 500px) {
 
-.project-list {
-  grid-gap: 10px;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+#rotating-text span{
+  font-size: 42px;
+  width: 280px;
+  padding-left: 0;
+  margin-right: 5px;
 }
 
-.project-list__item:last-child,
-.project-list__full-row-item {
-  grid-column: auto / auto;
-  grid-row: auto / auto;
-}
-
-.personal-logo {
-  width: 100%;
-  height: auto;
-  margin-left: 0;
+.main__heading{
+  margin-bottom: 50px;
 }
 
 body {
   position: relative;
-  z-index: -1;
-  /*placed behind the profile picture to be able to click that*/
-}
-
-.section-one {
-  position: relative;
-  z-index: -1;
-  /*placed behind the profile picture to be able to click that*/
-}
-
-.profile {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 100px;
-  position: relative;
-  z-index: -1;
+  z-index: 1;
+  background-color: rgb(29, 0, 27);
   /*placed behind the profile picture to be able to click that*/
 }
 
@@ -1166,74 +1144,16 @@ body {
   /* placed forward*/
 }
 
-.mobile-nav-list__item,
-ul.mobile-nav-list li {
-  z-index: 2;
+.contact-form-wrapper{
+  margin-top: -40px;
 }
 
-.button {
-  font-size: 90%;
+.project-list{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-
-h1 {
-  font-size: 22px;
-}
-
-.toggler-location-row {
-  font-size: 28px;
-  padding: 0;
-}
-
-.page__footer {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(29, 0, 27, .1)), to(rgba(29, 0, 27, 1)));
-  background-image: -o-linear-gradient(right, rgba(29, 0, 27, .1), rgba(29, 0, 27, 1));
-  background-image: linear-gradient(to left, rgba(29, 0, 27, .1), rgba(29, 0, 27, 1));
-  clear: both;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  max-width: 100%;
-  height: 60px;
-}
-
-.page__footer-text {
-  margin: 0;
-  color: #E3DFE3;
-}
-
-.social-media-phone ul {
-  padding: 0;
-}
-
-.social-media-phone li {
-  display: inline-block;
-  padding: 0 5px;
-}
-
-.social-media-desktop {
-  display: none;
-}
-
-.main__heading {
-  font-size: 44px;
-}
-
-.navigation-list {
-  display: none;
-}
-
-#menu-toggle {
-  position: absolute;
-  right: 30px;
-  top: 88px;
-}
-
-.navigation-list__item:before,
-.navigation-list__item:after {
-  display: none;
-}
-
 
 }
 
@@ -1248,7 +1168,7 @@ h1 {
 
 body{
   position: relative;
-  z-index: -111;
+  z-index: 1;
 }
 
   #menu-toggle {
@@ -1284,6 +1204,12 @@ body{
     grid-row: auto / auto;
   }
 
+  .page-header{
+    background-image: -o-linear-gradient(right, rgba(29, 0, 27, 1), rgba(29, 0, 27, 1));
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(29, 0, 27, 1)), to(rgba(29, 0, 27, 1)));
+    background-image: linear-gradient(to left, rgba(29, 0, 27, 1), rgba(29, 0, 27, 1));
+  }
+
   .personal-logo {
     width: 100%;
     height: auto;
@@ -1306,7 +1232,7 @@ body{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     position: relative;
     z-index: -1;
     /*placed behind the profile picture to be able to click that*/
@@ -1314,6 +1240,7 @@ body{
 
   .profile__picture-wrapper {
     width: 100%;
+    height: 284px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1345,9 +1272,9 @@ body{
   }
 
   .page__footer {
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(29, 0, 27, .1)), to(rgba(29, 0, 27, 1)));
-    background-image: -o-linear-gradient(right, rgba(29, 0, 27, .1), rgba(29, 0, 27, 1));
-    background-image: linear-gradient(to left, rgba(29, 0, 27, .1), rgba(29, 0, 27, 1));
+    background-image: -o-linear-gradient(right, rgba(29, 0, 27, 1), rgba(29, 0, 27, 1));
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(29, 0, 27, 1)), to(rgba(29, 0, 27, 1)));
+    background-image: linear-gradient(to left, rgba(29, 0, 27, 1), rgba(29, 0, 27, 1));
     clear: both;
     position: fixed;
     bottom: 0;
