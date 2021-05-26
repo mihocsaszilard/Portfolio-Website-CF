@@ -99,6 +99,10 @@ main {
   z-index: -2;
 }
 
+.main-about{
+  height: 100vh;
+}
+
 /*-------------------CUSTOM CURSOR-----------------*/
 /*.cursor {
   width: 25px;
