@@ -107,7 +107,7 @@ main {
 }
 
 .main-about {
-  height: 100vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: 3fr 2fr;
   background-image: linear-gradient(to top left, rgba(66, 178, 200, 0), rgba(66, 178, 200, .1));
