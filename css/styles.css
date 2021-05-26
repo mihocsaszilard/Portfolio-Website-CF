@@ -1032,7 +1032,8 @@ button:focus,
     font-size: 90%;
   }
 
-  h1 {
+  h1,
+  .about-me h1 {
     font-size: 22px;
   }
 
