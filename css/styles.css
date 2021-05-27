@@ -99,19 +99,31 @@ main {
   z-index: -2;
 }
 
-.index-body{
-  background-image: url(../img/bg-homeoffice.png), linear-gradient(to bottom right, rgba(29, 0, 27, .9), rgba(29, 0, 27, 1));
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .page-heading{
   mix-blend-mode: screen;
   font-size: 42px;
   text-align: left;
   padding: 10px 30px;
 }
+
+.image-hero-area {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+margin: 0;
+background: url(../img/bg-homeoffice.png) center center no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
 
 /*
 -----------------ABOUT PAGE----------------
