@@ -99,6 +99,13 @@ main {
   z-index: -2;
 }
 
+.page-heading{
+  mix-blend-mode: screen;
+  font-size: 42px;
+  text-align: left;
+  padding: 10px 30px;
+}
+
 /*
 -----------------ABOUT PAGE----------------
 */
@@ -137,14 +144,11 @@ main {
   font-size: 42px;
 }
 
-.about-me__item {
+.about-me__item{
   color: white;
   mix-blend-mode: screen;
   font-size: 18px;
   text-align: left;
-}
-
-.about-me__item {
   padding: 10px 30px;
 }
 
@@ -924,6 +928,11 @@ button:focus,
     background-image: linear-gradient(to left, rgba(29, 0, 27, 1), rgba(29, 0, 27, 1));
   }
 
+  .page-heading{
+    font-size: 22px;
+    font-weight: 400;
+  }
+
   .main-about {
     display: block;
   }
@@ -935,6 +944,10 @@ button:focus,
   .about-me p {
     font-size: 18px;
     padding: 0;
+  }
+
+  .about-me h1{
+    font-weight: 400;
   }
 
   .button-container {
