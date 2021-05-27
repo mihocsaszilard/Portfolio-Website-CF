@@ -857,6 +857,15 @@ button:focus,
   background-image: linear-gradient(to bottom left, #AA9FAA, #E3DFE3);
 }
 
+.copyright{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  margin: 0;
+}
+
 /*
 --------------------Media Queries-------------------
 */
@@ -1064,6 +1073,11 @@ button:focus,
   .navigation-list__item:after {
     display: none;
   }
+
+.copyright{
+  display: none;
+}
+
 }
 
 @media all and (max-width: 500px) {
