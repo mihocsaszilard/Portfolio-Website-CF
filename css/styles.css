@@ -203,7 +203,7 @@ main {
 
 .personal-logo {
   width: 150px;
-  margin-left: 75px;
+  margin-left: 10vw;
   background-color: #1D001B;
   padding: 0 5px 5px 5px;
   border-radius: 5px;
@@ -942,7 +942,8 @@ button:focus,
   }
 
   .personal-logo {
-    display: none;
+    height: 50px;
+    margin-left: 5vw;
   }
 
   body {
