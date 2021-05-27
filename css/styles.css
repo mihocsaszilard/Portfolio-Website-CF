@@ -1,6 +1,6 @@
 /*
 -----------------COLOR PALETTE-----------------
-#1D001B ----------main--------
+var(--darkest-purple) ----------main--------
 29, 0, 27
 #392038
 57, 32, 56
@@ -14,20 +14,18 @@
 170, 159, 170
 #C7BFC6
 199, 191, 198
-#E3DFE3
+var(--heading-color)
 227, 223, 227
-Background color: #fcf9f0;
-Menubar color: #F2ECDC;
-Highlighting Red: #981209;
-Text Color (Dark Gray): #2b2b2b;
-Main Headline color (Black): #171717;
 */
 :root {
   --background-color: linear-gradient(to bottom right, rgba(29, 0, 27, .9), rgba(29, 0, 27, 1));
   --menu-color: linear-gradient(to left, rgba(29, 0, 27, .1), rgba(29, 0, 27, 1));
   --heading-color: #E3DFE3;
+  --turquoise-hightight: rgb(66, 178, 200);
   --text-color: #564054;
+  --darkest-purple: #1D001B;
   --deep-black: #171717;
+  --biggest-font: 42px;
   --big-font-size: 30px;
   --medium-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   --complete-width: 100%;
@@ -73,7 +71,7 @@ h1 {
   color: var(--heading-color);
   font-size: var(--big-font-size);
   font-weight: 700;
-  border-bottom: 1px solid rgb(66, 178, 200);
+  border-bottom: 1px solid var(--turquoise-hightight);
   padding: 30px;
   padding-bottom: 10px;
 }
@@ -99,37 +97,35 @@ main {
   z-index: -2;
 }
 
-.page-heading{
+.page-heading {
   mix-blend-mode: screen;
-  font-size: 42px;
+  font-size: var(--biggest-font);
   text-align: left;
   padding: 10px 30px;
 }
 
 .image-hero-area {
-position: fixed;
-right: 0;
-bottom: 0;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -100;
-margin: 0;
-background: url(../img/bg-homeoffice.png) center center no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  margin: 0;
+  background: url(../img/bg-homeoffice.png) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
-
 
 /*
 -----------------ABOUT PAGE----------------
 */
 .main-navigation {
-  background-color: #1D001B
+  background-color: var(--darkest-purple);
 }
 
 .main-about {
@@ -160,10 +156,10 @@ background-size: cover;
 }
 
 .about-me h1 {
-  font-size: 42px;
+  font-size: var(--biggest-font);
 }
 
-.about-me__item{
+.about-me__item {
   color: white;
   mix-blend-mode: screen;
   font-size: 18px;
@@ -227,7 +223,7 @@ background-size: cover;
 .personal-logo {
   width: 150px;
   margin-left: 10vw;
-  background-color: #1D001B;
+  background-color: var(--darkest-purple);
   padding: 0 5px 5px 5px;
   border-radius: 5px;
 }
@@ -345,7 +341,7 @@ background-size: cover;
   position: relative;
   right: 0px;
   top: -50px;
-  background: rgb(66, 178, 200);
+  background: var(--turquoise-hightight);
   height: 3px;
   width: 40px;
   margin-bottom: 7px;
@@ -381,7 +377,7 @@ background-size: cover;
   padding-right: 55px;
   color: var(--heading-color);
   font-size: 48px;
-  border-bottom: 1px solid rgb(66, 178, 200);
+  border-bottom: 1px solid var(--turquoise-hightight);
 }
 
 .line,
@@ -447,8 +443,8 @@ background-size: cover;
 }
 
 .name-highlight {
-  color: #1D001B;
-  text-shadow: -1px -1px 0 rgb(66, 178, 200), 1px -1px 0 rgb(66, 178, 200), -1px 1px 0 rgb(66, 178, 200), 1px 1px 0 rgb(66, 178, 200);
+  color: var(--darkest-purple);
+  text-shadow: -1px -1px 0 var(--turquoise-hightight), 1px -1px 0 var(--turquoise-hightight), -1px 1px 0 var(--turquoise-hightight), 1px 1px 0 var(--turquoise-hightight);
 }
 
 .main__paragraph {
@@ -496,7 +492,7 @@ h3.main__paragraph {
 
 .designer-text {
   font-family: 'Dancing Script', cursive;
-  color: #42B2C8;
+  color: var(--turquoise-hightight);
 }
 
 .developer-text {
@@ -595,7 +591,7 @@ button:focus,
 
 .button__prymary {
   background-color: rgba(66, 178, 200, .4);
-  border: .5px solid #42B2C8;
+  border: .5px solid var(--turquoise-hightight);
 }
 
 .button__secondary {
@@ -664,7 +660,7 @@ button:focus,
   border-radius: 30%;
   background-image: var(--background-color);
   opacity: .5;
-  box-shadow: 0 0 3px #1D001B;
+  box-shadow: 0 0 3px var(--darkest-purple);
 }
 
 .social-media-phone__icon:hover,
@@ -708,7 +704,7 @@ button:focus,
 }
 
 .contact-element::placeholder {
-  color: rgb(66, 178, 200);
+  color: var(--turquoise-hightight);
   font-size: 16px;
   font-weight: 300;
   opacity: .5;
@@ -818,7 +814,7 @@ button:focus,
     background-position: center;
     background-size: cover;
     transition: all 1s ease-in-out;
-    box-shadow: 5px 5px 10px #1D001B;
+    box-shadow: 5px 5px 10px var(--darkest-purple);
     padding-bottom: 10%;
   }
 
@@ -837,7 +833,7 @@ button:focus,
 
   .project-title {
     margin-top: 20%;
-    font-size: 42px;
+    font-size: var(--biggest-font);
   }
 
   .project-button {
@@ -876,7 +872,7 @@ button:focus,
   background-image: linear-gradient(to bottom left, #AA9FAA, #E3DFE3);
 }
 
-.copyright{
+.copyright {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -956,7 +952,7 @@ button:focus,
     background-image: linear-gradient(to left, rgba(29, 0, 27, 1), rgba(29, 0, 27, 1));
   }
 
-  .page-heading{
+  .page-heading {
     font-size: 22px;
     font-weight: 400;
   }
@@ -974,7 +970,7 @@ button:focus,
     padding: 0;
   }
 
-  .about-me h1{
+  .about-me h1 {
     font-weight: 400;
   }
 
@@ -1058,7 +1054,7 @@ button:focus,
 
   .page__footer-text {
     margin: 0;
-    color: #E3DFE3;
+    color: var(--heading-color);
   }
 
   .social-media-phone ul {
@@ -1093,15 +1089,14 @@ button:focus,
     display: none;
   }
 
-.copyright{
-  display: none;
-}
-
+  .copyright {
+    display: none;
+  }
 }
 
 @media all and (max-width: 500px) {
   #rotating-text span {
-    font-size: 42px;
+    font-size: var(--biggest-font);
     width: 280px;
     padding-left: 0;
     margin-right: 5px;
