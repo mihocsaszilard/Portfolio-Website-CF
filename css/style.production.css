@@ -470,20 +470,6 @@ main {
 ----------------------PARALLAX effect-------------------
 */
 /*-------------------PARALLAX effect end----------------*/
-.button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 100px;
-  z-index: 2;
-}
-
-.button-container a {
-  z-index: 2;
-}
 
 .main__heading {
   font-size: 90px;
@@ -669,6 +655,22 @@ h3.main__paragraph {
 /*
 ----------------Title toggler end------------
 */
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.button-container a {
+  z-index: 2;
+}
+
 button,
 .button {
   display: inline-block;
@@ -719,13 +721,14 @@ button:focus {
           box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.button__prymary {
+.button__primary {
   background-color: rgba(66, 178, 200, .4);
   border: .5px solid rgb(66, 178, 200);
 }
 
 .button__secondary {
   border: .5px solid;
+  background-color: transparent;
 }
 
 .button-img {
