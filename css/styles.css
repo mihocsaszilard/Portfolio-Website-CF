@@ -674,6 +674,12 @@ button:focus,
 /*
 ------------------Contact form----------
 */
+
+.error-message {
+  color: red;
+  font-size: 16px;
+}
+
 .information {
   display: inline-block;
   align-items: center;
@@ -727,6 +733,11 @@ button:focus,
   position: absolute;
   width: 100%;
   max-width: 600px;
+}
+
+.form-control input{
+  color: var(--turquoise-hightight);
+  font-weight: 300;
 }
 
 .form-control:nth-child(2) {
