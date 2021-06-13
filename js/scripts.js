@@ -26,7 +26,7 @@
       showErrorMessage(emailInput, 'E-mail is a required field.');
       return false;
     }
-    if (value.indexOf('@') === -1 && value.indexOf('.') === -1) {
+    if (value.indexOf('@') === -1 || value.indexOf('.') === -1) {
       showErrorMessage(emailInput, 'This is not a valid e-mail address.');
       return false;
     }
