@@ -823,16 +823,16 @@ button:focus,
     margin-right: 3vw;
   }
 
-  .omnifood {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/omnifood.jpg);
+  .pokedex {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/pokedex.png);
     background-position: center;
     background-size: cover;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
     box-shadow: 5px 5px 10px var(--darkest-purple);
     padding-bottom: 10%;
   }
 
-  .omnifood-heading {
+  .pokedex-heading {
     margin-top: 10%;
     font-size: 38px;
   }
@@ -842,7 +842,7 @@ button:focus,
     margin-right: 5vw;
     max-width: 80%;
     height: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/omnifood.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/pokedex.png);
   }
 
   .project-title {
