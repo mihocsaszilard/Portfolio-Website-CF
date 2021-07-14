@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
-  <!--<link rel="stylesheet" type="text/css" href=""css/styles.css"">-->
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
 
 </head>
 
@@ -99,21 +99,26 @@
         <img class="profile__picture-animated profile__picture-static" src="img/profile-picture-animation.gif" alt="Mihocsa Szilard Portrait">
       </label>
 
+      <div class="parallax-container">
+        <div class="white-part" ></div>
+        <div class="white-part white-part-two"></div>
+      </div>
+
       <div class="profile__content">
-        <h1 class="main__heading">Hello! I`m <span class="name-highlight">Mihocsa Szilard</span>,</h1>
+        <h1 class="parallax main__heading" data-value= "-2" ><span >Hello! I`m</span></h1> <h1 class="parallax main__heading" data-value="1"><span class="name-highlight">Mihocsa Szilard,</span></h1>
         <div class="toggler ">
           <h3 class="static-text toggler-row"></h3>
-          <div class="main__paragraph" id="text-wrapper">
+          <div class="parallax main__paragraph" id="text-wrapper" data-value="3">
             <span id="rotating-text">
               <span class="developer-text">Developer</span>
               <span class="designer-text">Designer</span>
               <span class="programmer-text"> &lt;programmer&gt; </span>
             </span>
           </div>
-          <h3 class="toggler-location-row"><img class="located-icon" src="img/location.svg" alt="located"> Bavaria, Germany</h3>
+          <h3 class="parallax toggler-location-row" data-value="-1"><img class="located-icon" src="img/location.svg" alt="located"> Bavaria, Germany</h3>
         </div>
       </div>
-      <div class="button-container">
+      <!-- <div class="button-container">
          <div class="button-box">
            <a class="button button__primary" href="contact.html">Let`s talk!</a>
          </div>
@@ -121,7 +126,7 @@
            <a class="button button__secondary" href="work.html">My Works</a>
          </div>
 
-      </div>
+      </div> -->
     </div>
 
     <div class="social-media-desktop">
@@ -148,9 +153,60 @@
     </div>
   </main>
 
-<!--  <section class="section-two">
+ <section class="section-two">
+  <div class="placeholder" id="placeholder">
+    <div class="text-info">
+      <h2 class="info-title">A little bit about me...</h2>
+      <div class="school">
+        <p>
+          Hello! I`m Szilárd (/ˈsiː lɑːd/), a Hungarian guy who lived his whole life in Transylvania and moved in Germany some years ago.
+          At the moment I have two important things in my life, the first: a child whom I will get to know in November. The second is my career: I`m on the way
+          to change my whole life, make my dream come true and enter in the tech world as a Full Stack Web Developer.
+         </p>
+         <h3 class="darker-text">About my educational history</h3>
+         <div class="school">
+           <p class="school-text">
+             Due to my feelings about the elementary math I decided to continue my high school studies in a field closely related with math and informatics.
+              Of course this was a choise I regter and not becasue of the informatics.
+           </p>
+           <img src="img/math.svg" alt="pi" class="math parallax" data-value= "4">
+           <img src="img/math2.svg" alt="x on power y" class="math2 parallax" data-value= "-3">
+         </div>
+        <p></p>
+         <div class="university">
+           <p class="university-text">
+              After this less pleasant experience I departed in the direction of chemistry and started to learn the knack of the pharmacology in the University.
+              Some months before graduation I got my first job at a multinational pharmaceutical company as a chemical operator at the Technological Development Department.
+              I learned a lot of useful things and gained skills like precision, time management and patience but after two years I realized that I`m get stuck so it`s time to change.
+            </p>
+           <img src="img/chemistry.svg" alt="chemical tube" class="chemistry parallax" data-value= "-10">
+         </div>
+         <p></p>
+         <div class="electrician">
+           <p class="electricity-text">
+            So in September 2018 I switched gears and 2 weeks later moved in Germany and get a new job as a "Dachdecker".
+             Some times later I moved in Bavaria and get another job, this time as an electrician. During this time I learned and made new connections,
+             become aware of new possibilities.
+            </p>
+            <img src="img/electricity.svg" alt="light bulb" class="electricity parallax" data-value= "-5">
+            <img src="img/electricity2.svg" alt="cable" class="electricity2 parallax" data-value= "3">
+            <img src="img/drill.svg" alt="drill" class="drill parallax" data-value= "4">
+         </div>
+         <div class="web">
+           <p class="web-text">
+            One of this possibilities is the Web Developement, the coding, my childhood dream. Ever since I can remember I always was curious about the technology and now I started my journey
+            on this path. Now I`m really excited and can`t wait to find my way and my role in the tech community.
+            </p>
+            <p class="darker-text">Wish me luck!</p>
+           <img src="img/coding.svg" alt="coding" class="coding parallax" data-value= "7">
+           <img src="img/coding2.svg" alt="coding" class="coding2 parallax" data-value= "5">
+           <img src="img/datebase.svg" alt="datebase" class="datebase parallax" data-value= "-1">
+         </div>
+      </div>
+    </div>
+  </div>
 
-</section>-->
+</section>
 
   <!-- Footer with links to social media profiles -->
   <footer class="page__footer">
@@ -178,7 +234,8 @@
     </div>
   </footer>
 
-  <script src="js/tota11y.min.js"></script>
+  <script src="js/motions.js"></script>
+  <!-- <script src="js/tota11y.min.js"></script> -->
 </body>
 
 </html>
