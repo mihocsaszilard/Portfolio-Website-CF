@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
 
@@ -220,9 +220,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(29, 0, 27, .1)), to(rgba(29, 0, 27, 1)));
-  background-image: -o-linear-gradient(right, rgba(29, 0, 27, .1), rgba(29, 0, 27, 1));
-  background-image: linear-gradient(to left, rgba(29, 0, 27, .1), rgba(29, 0, 27, 1));
+  background-color: #1D001B;
   /*  box-shadow: var(--medium-box-shadow);*/
 }
 
@@ -231,7 +229,7 @@ main {
   margin-left: 10vw;
   background-color: #1D001B;
   padding: 0 5px 5px 5px;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .page-header__item {
@@ -252,7 +250,7 @@ main {
   list-style-type: none;
 }
 
-/*Navigation animation NOT WORKING PROPERLY */
+/*Navigation animation */
 .navigation-list__item:before {
   position: absolute;
   width: 100%;
@@ -469,8 +467,39 @@ main {
 /*
 ----------------------PARALLAX effect-------------------
 */
-/*-------------------PARALLAX effect end----------------*/
+.parallax-container {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
+.white-part {
+  position: fixed;
+  top: 51%;
+  left: -10%;
+  width: 70%;
+  height: 80%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(214, 255, 245, 1)), to(rgba(235, 255, 250, 1)));
+  background-image: -o-linear-gradient(rgba(214, 255, 245, 1), rgba(235, 255, 250, 1));
+  background-image: linear-gradient(rgba(214, 255, 245, 1), rgba(235, 255, 250, 1));
+  z-index: -999;
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+.white-part-two {
+  position: fixed;
+  left: 40%;
+  -webkit-transform: rotate(-4deg);
+      -ms-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+
+/*-------------------PARALLAX effect end----------------*/
 .main__heading {
   font-size: 90px;
   font-weight: 300;
@@ -480,8 +509,9 @@ main {
 }
 
 .name-highlight {
+  font-weight: 300;
   color: #1D001B;
-  text-shadow: -1px -1px 0 rgb(66, 178, 200), 1px -1px 0 rgb(66, 178, 200), -1px 1px 0 rgb(66, 178, 200), 1px 1px 0 rgb(66, 178, 200);
+  text-shadow: -1px -1px 0 rgba(214, 255, 245, 1), 1px -1px 0 rgba(214, 255, 245, 1), -1px 1px 0 rgba(214, 255, 245, 1), 1px 1px 0 rgba(214, 255, 245, 1);
 }
 
 .main__paragraph {
@@ -519,7 +549,14 @@ h3.main__paragraph {
 }
 
 .toggler-location-row {
+  color: #726071;
   margin-top: 40px;
+}
+
+.located-icon {
+  height: 50px;
+  margin-bottom: -5px;
+  border-radius: 10px;
 }
 
 .static-text {
@@ -527,45 +564,43 @@ h3.main__paragraph {
 }
 
 .programmer-text {
+  color: #171717;
   font-family: 'Inconsolata', monospace;
-  color: #F8BA5C;
+  text-shadow: -1px -1px 0 rgba(214, 255, 245, 1), 1px -1px 0 rgba(214, 255, 245, 1), -1px 1px 0 rgba(214, 255, 245, 1), 1px 1px 0 rgba(214, 255, 245, 1);
 }
 
 .designer-text {
+  color: #0093c4;
   font-family: 'Dancing Script', cursive;
-  color: rgb(66, 178, 200);
+  text-shadow: 0 2px 4px #1D001B;
 }
 
 .developer-text {
-  font-family: inherit;
   color: #FF0000;
-}
-
-.located-icon {
-  height: 50px;
-  margin-bottom: -5px;
+  font-family: inherit;
+  text-shadow: -1px -1px 0 rgba(214, 255, 245, 1), 1px -1px 0 rgba(214, 255, 245, 1), -1px 1px 0 rgba(214, 255, 245, 1), 1px 1px 0 rgba(214, 255, 245, 1);
 }
 
 #text-wrapper {
-  height: 65px;
-  padding: 0;
-  overflow: hidden;
   display: block;
+  height: 65px;
+  overflow: hidden;
+  padding: 0;
 }
 
 #rotating-text span {
-  padding: 15px 12px;
-  height: 120px;
   display: block;
-  width: 360px;
-  margin: 0 auto;
   font-size: 52px;
+  height: 120px;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 360px;
 }
 
 #rotating-text {
-  display: block;
   -webkit-animation: rotate 5s linear infinite;
           animation: rotate 5s linear infinite;
+  display: block;
 }
 
 @-webkit-keyframes rotate {
@@ -655,7 +690,6 @@ h3.main__paragraph {
 /*
 ----------------Title toggler end------------
 */
-
 .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -731,10 +765,6 @@ button:focus {
   background-color: transparent;
 }
 
-.button__github{
-  margin-top: 0;
-}
-
 .button-img {
   height: 20px;
   margin: 0 7px -4px 0;
@@ -798,20 +828,19 @@ button:focus {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(29, 0, 27, .9)), to(rgba(29, 0, 27, 1)));
   background-image: -o-linear-gradient(top left, rgba(29, 0, 27, .9), rgba(29, 0, 27, 1));
   background-image: linear-gradient(to bottom right, rgba(29, 0, 27, .9), rgba(29, 0, 27, 1));
-  opacity: .5;
-  -webkit-box-shadow: 0 0 3px #1D001B;
-          box-shadow: 0 0 3px #1D001B;
+  opacity: .8;
+  -webkit-box-shadow: 0 0 5px #1D001B;
+          box-shadow: 0 0 5px #1D001B;
 }
 
 .social-media-phone__icon:hover,
 .social-media-phone__icon:focus {
-  opacity: .8;
+  opacity: 1;
 }
 
 /*
 ------------------Contact form----------
 */
-
 .error-message {
   color: red;
   font-size: 16px;
@@ -908,7 +937,7 @@ button:focus {
   max-width: 600px;
 }
 
-.form-control input{
+.form-control input {
   color: rgb(66, 178, 200);
   font-weight: 300;
 }
@@ -1002,7 +1031,7 @@ button:focus {
   .project-list {
     display: -ms-grid;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 10px;
     -ms-grid-columns: 3fr 10px 1fr;
     grid-template-columns: 3fr 1fr;
     /*grid-template-rows: 300px 300px;*/
@@ -1025,22 +1054,30 @@ button:focus {
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     -webkit-box-shadow: 5px 5px 10px #1D001B;
-            box-shadow: 5px 5px 10px #1D001B;
+    box-shadow: 5px 5px 10px #1D001B;
     padding-bottom: 10%;
   }
 
   .pokedex {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url(../img/pokedex.PNG);
     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/pokedex.PNG);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url(../img/pokedex.PNG);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/pokedex.PNG);
     background-position: center;
     background-size: cover;
   }
 
   .to-do {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url(../img/todo.PNG);
     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/todo.PNG);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url(../img/todo.PNG);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/todo.PNG);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .cinemApp {
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/cinemApp.PNG);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url(../img/cinemApp.PNG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/cinemApp.PNG);
     background-position: center;
     background-size: cover;
   }
@@ -1055,7 +1092,6 @@ button:focus {
     margin-right: 5vw;
     max-width: 80%;
     height: 80%;
-
   }
 
   .project-title {
@@ -1089,19 +1125,142 @@ button:focus {
   }
 }
 
+/*-------------------SECTION TWO------------------------*/
 .section-two {
-  z-index: -10;
+  z-index: -1;
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
   height: 100vh;
   padding: 0;
   margin: 0;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#AA9FAA), to(#E3DFE3));
-  background-image: -o-linear-gradient(top right, #AA9FAA, #E3DFE3);
-  background-image: linear-gradient(to bottom left, #AA9FAA, #E3DFE3);
+  background-color: #1D001B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+.placeholder {
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: rgba(214, 255, 245, 1);
+  float: left;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.hide {
+  opacity: 0;
+  left: 0;
+}
+
+.show {
+  opacity: 1;
+  left: -100%;
+}
+
+.text-info {
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 60%;
+  font-size: 20px;
+}
+
+.info-title {
+  font-size: 35px;
+  font-weight: 300;
+  text-align: left;
+  color: #564054;
+}
+
+.text-left {
+  text-align: left;
+  color: #564054;
+}
+
+.darker-text {
+  color: #564054;
+}
+
+.school {
+  display: inline-block;
+  text-align: center;
+}
+
+.school-text,
+.university-text {
+  width: 85%;
+  text-align: center;
+  margin: auto;
+}
+
+.math,
+.math2,
+.chemistry,
+.electricity,
+.electricity2,
+.drill,
+.coding,
+.coding2,
+.datebase {
+  height: 50px;
+  margin-top: 5%;
+  position: absolute;
+  opacity: .4;
+}
+
+.math {
+  top: 15%;
+  left: 10%;
+}
+
+.math2 {
+  top: 38%;
+  left: 50%;
+}
+
+.chemistry {
+  top: 60%;
+  left: 75%;
+}
+
+.electricity {
+  top: 48%;
+  left: 16%;
+}
+
+.electricity2 {
+  top: 65%;
+  left: 39%;
+}
+
+.drill {
+  top: 20%;
+  left: 65%;
+}
+
+.coding {
+  top: 72%;
+  left: 66%;
+}
+
+.coding2 {
+  top: 22%;
+  left: 26%;
+}
+
+.datebase {
+  top: 28%;
+  left: 86%;
+}
+
+/*-----------------------section two end------------------------*/
 .copyright {
   position: fixed;
   bottom: 0;
@@ -1114,51 +1273,37 @@ button:focus {
 /*
 --------------------Media Queries-------------------
 */
+@media all and (min-width: 1023px) and (max-width: 1200px) {
+  .placeholder {
+    height: 100%;
+  }
+
+  .section-one,
+  .profile {
+    height: 100vh;
+  }
+
+  .profile__content {
+    margin-top: 25%;
+  }
+
+  .toggler-location-row {
+    margin-top: 10%;
+  }
+}
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-
-  .project-list__item{
-    padding-bottom: 100px;
-  }
-
-  .project-description {
-    width: 100%;
-    margin: auto;
-  }
-
-  .project-title{
-    margin-top: 150px;
-  }
-
-  .project-details{
-    text-align: center;
-    margin: auto;
-  }
-}
-
-@media all and (min-width: 750px) and (max-width: 1200px) {
-
-  .project-list__item{
-    padding-bottom: 60px;
-  }
-
-  .project-list__item h3{
-    font-size: 28px;
-  }
-
-  .project-img img{
-    height: 35px;
-  }
-
-  .project-button{
-    width: 150px;
-  }
 }
 
 @media all and (min-width: 750px) {
+  .social-media-phone {
+    display: none;
+  }
+
   body {
     position: relative;
     z-index: 1;
@@ -1172,10 +1317,6 @@ button:focus {
     margin-top: 5px;
   }
 
-  .social-media-phone {
-    display: none;
-  }
-
   .project-list {
     grid-gap: 15px;
     padding: 0 35px;
@@ -1183,6 +1324,18 @@ button:focus {
 
   .contact-form-wrapper {
     height: 700px;
+  }
+}
+
+@media all and (min-width: 750px) and (max-width: 1023px) {
+  .placeholder {
+    height: 160%;
+  }
+
+  .text-info {
+    margin-top: 150px;
+    width: 90%;
+    font-size: 24px;
   }
 }
 
@@ -1266,13 +1419,18 @@ button:focus {
     /*placed behind the profile picture to be able to click that*/
   }
 
+  .section-two {
+    height: 260%;
+    margin-bottom: 60px;
+  }
+
   .profile {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     padding-bottom: 120px;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     /*placed behind the profile picture to be able to click that*/
   }
 
@@ -1368,9 +1526,8 @@ button:focus {
 @media all and (max-width: 500px) {
   #rotating-text span {
     font-size: 42px;
-    width: 280px;
+    width: auto;
     padding-left: 0;
-    margin-right: 5px;
   }
 
   .main__heading {
@@ -1402,31 +1559,17 @@ button:focus {
     margin-top: -40px;
   }
 
-  .project-title{
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 32px;
-  }
-
-  .project-details{
-    margin: auto;
-    text-align: center;
-  }
-
-  .project-list__item{
-    height: 100%;
-  }
-
-  .project-description {
-    width: 100%;
-  }
-
   .project-description img {
     height: 30px;
   }
 
   .button-container {
     margin-top: 80px;
+  }
+
+  .text-info {
+    width: 90%;
+    font-size: 16px;
   }
 }
 
