@@ -90,8 +90,9 @@ p {
 
 main {
   position: relative;
-  padding: 40px 20px 0 20px;
+  margin: 40px 20px 0;
   z-index: -2;
+  height: 80vh;
 }
 
 .page-heading {
@@ -123,7 +124,7 @@ main {
 }
 
 .main-about {
-  height: 90vh;
+  height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 2fr;
@@ -171,7 +172,7 @@ main {
 
 /*-----------------about page end----------------*/
 /*-------------------CUSTOM CURSOR-----------------*/
-/*.cursor {
+/* .cursor {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -197,7 +198,7 @@ main {
 .cursor:hover,
 .cursor:active,
 .cursor::after,
-.cursor::before{
+.cursor::before {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -207,7 +208,8 @@ main {
   transform: translate3d(-50%, -50%, 0);
   border-radius: 50%;
   transition: 0.5s ease-out;
-}*/
+} */
+
 /*----------------custom cursor end------------------*/
 .page-header {
   display: -webkit-box;
@@ -225,10 +227,10 @@ main {
 }
 
 .personal-logo {
-  width: 150px;
+  width: 105px;
   margin-left: 10vw;
   background-color: #1D001B;
-  padding: 0 5px 5px 5px;
+  padding: 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
 
@@ -391,9 +393,9 @@ main {
 }
 
 .mobile-nav-list {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(29, 0, 27, .9)), to(rgba(29, 0, 27, 1)));
-  background-image: -o-linear-gradient(top left, rgba(29, 0, 27, .9), rgba(29, 0, 27, 1));
-  background-image: linear-gradient(to bottom right, rgba(29, 0, 27, .9), rgba(29, 0, 27, 1));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(29, 0, 27, 0.9)), to(rgba(29, 0, 27, 1)));
+  background-image: -o-linear-gradient(top left, rgba(29, 0, 27, 0.9), rgba(29, 0, 27, 1));
+  background-image: linear-gradient(to bottom right, rgba(29, 0, 27, 0.9), rgba(29, 0, 27, 1));
   width: 400px;
   height: 390px;
   text-align: right;
@@ -503,7 +505,7 @@ main {
 .main__heading {
   font-size: 90px;
   font-weight: 300;
-  margin: 10px 0;
+  margin: 1px 0;
   padding: 0;
   border: 0;
 }
@@ -771,6 +773,65 @@ button:focus {
   border-radius: 50%;
 }
 
+.tech-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90vw;
+  -webkit-transform: translateX(-5%);
+      -ms-transform: translateX(-5%);
+          transform: translateX(-5%);
+  height: 300px;
+  margin-top: 300px;
+  overflow: hidden;
+}
+
+.tech-stack span {
+  display: block;
+  width: 5850px;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  -webkit-animation: marquee 30s linear infinite;
+          animation: marquee 30s linear infinite;
+}
+
+.tech-stack span:first-child {
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.tech-stack div {
+  float: left;
+  height: 100px;
+  margin: auto 40px;
+}
+
+.tech-stack:hover span {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.stack-element img {
+  height: 90px;
+  margin: auto;
+}
+
+@-webkit-keyframes marquee {
+  0% { left: 0; }
+  100% { left: -2922px; }
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -2922px; }
+}
+
 /*------------Profile Picture animation----------------*/
 .profile__picture-wrapper {
   display: inline-block;
@@ -825,9 +886,9 @@ button:focus {
 .social-media-phone__icon {
   margin: 0 2px;
   border-radius: 30%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(29, 0, 27, .9)), to(rgba(29, 0, 27, 1)));
-  background-image: -o-linear-gradient(top left, rgba(29, 0, 27, .9), rgba(29, 0, 27, 1));
-  background-image: linear-gradient(to bottom right, rgba(29, 0, 27, .9), rgba(29, 0, 27, 1));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(29, 0, 27, 0.9)), to(rgba(29, 0, 27, 1)));
+  background-image: -o-linear-gradient(top left, rgba(29, 0, 27, 0.9), rgba(29, 0, 27, 1));
+  background-image: linear-gradient(to bottom right, rgba(29, 0, 27, 0.9), rgba(29, 0, 27, 1));
   opacity: .8;
   -webkit-box-shadow: 0 0 5px #1D001B;
           box-shadow: 0 0 5px #1D001B;
@@ -860,7 +921,7 @@ button:focus {
 .contact-form-wrapper {
   width: 100%;
   max-width: 750px;
-  height: 600px;
+  max-height: 640px;
   margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -959,7 +1020,8 @@ button:focus {
 }
 
 .form-control:nth-child(6) {
-  margin-top: 350px;
+  margin-top: 330px;
+  margin-bottom: 0;
 }
 
 .form-element {
@@ -996,7 +1058,7 @@ button:focus {
             transform: translate3d(-5px, 5px, 2px);
   }
 
-  80% {
+  20% {
     -webkit-transform: translate3d(5px, -5px, -2px);
             transform: translate3d(5px, -5px, -2px);
   }
@@ -1013,7 +1075,7 @@ button:focus {
             transform: translate3d(-5px, 5px, 2px);
   }
 
-  80% {
+  20% {
     -webkit-transform: translate3d(5px, -5px, -2px);
             transform: translate3d(5px, -5px, -2px);
   }
@@ -1130,16 +1192,28 @@ button:focus {
     margin: 15px;
     margin-bottom: 35px;
     opacity: .8;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
   }
 }
 
-/*-------------------SECTION TWO------------------------*/
+/* -------------------SECTION TWO------------------------ */
+.show-more {
+  -webkit-transform: translateX(-50%) rotate(90deg);
+      -ms-transform: translateX(-50%) rotate(90deg);
+          transform: translateX(-50%) rotate(90deg);
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  width: 100px;
+}
+
 .section-two {
-  z-index: -1;
+  z-index: 1;
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
-  height: 100vh;
+  height: auto;
   padding: 0;
   margin: 0;
   background-color: #1D001B;
@@ -1181,7 +1255,7 @@ button:focus {
 }
 
 .info-title {
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 300;
   text-align: left;
   color: #564054;
@@ -1197,8 +1271,17 @@ button:focus {
 }
 
 .school {
-  display: inline-block;
-  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
 }
 
 .school-text,
@@ -1233,7 +1316,7 @@ button:focus {
   left: 50%;
 }
 
-.chemistry {
+.drill {
   top: 60%;
   left: 75%;
 }
@@ -1248,7 +1331,7 @@ button:focus {
   left: 39%;
 }
 
-.drill {
+.chemistry {
   top: 20%;
   left: 65%;
 }
@@ -1267,6 +1350,63 @@ button:focus {
   top: 28%;
   left: 86%;
 }
+
+.capital {
+  font-size: 50px; 
+  font-family: 'Times New Roman';
+  line-height: 1;
+}
+
+.date {
+  font-size: 60px;
+  font-family: 'Righteous', cursive;
+  text-shadow: 0 0 30px #1D001B;
+  color: rgba(214, 255, 245, 1);
+  text-align: center;
+  padding: 30px;
+}
+
+.bio-img {
+  margin-bottom: 10px;
+  background-size: cover;
+  overflow: visible;
+  border: 2px solid rgba(214, 255, 245, 1);
+  margin-right: 18px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: inset 15px 0 10px rgba(214, 255, 245, 1),
+  inset -15px 0 10px rgba(214, 255, 245, 1);
+          box-shadow: inset 15px 0 10px rgba(214, 255, 245, 1),
+  inset -15px 0 10px rgba(214, 255, 245, 1);
+}
+
+.umftgm {
+  background-image: url(./../img/umfst.jpg);
+}
+
+.grro {
+  background-image: url(./../img/grro.jpg);
+}
+
+.sapi {
+  background-image: url(./../img/sapi.jpg);
+}
+
+.freelance {
+  background-image: url(./../img//freelance.jpg);
+}
+
+.cf {
+  background-image: url(./../img/cf.jpg);
+}
+
+.bio-img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 
 /*-----------------------section two end------------------------*/
 .copyright {
@@ -1291,8 +1431,8 @@ button:focus {
     height: 100vh;
   }
 
-  .profile__content {
-    margin-top: 25%;
+  .main__heading {
+    margin: 0;
   }
 
   .toggler-location-row {
@@ -1345,9 +1485,23 @@ button:focus {
     width: 90%;
     font-size: 24px;
   }
+
+  .about-me {
+    width: 150%;
+  }
+
 }
 
 @media all and (max-width: 750px) {
+  
+  .about-me__item {
+    text-align: center;
+  }
+
+  .school {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
   .project-list {
     display: -ms-grid;
     display: grid;
@@ -1436,7 +1590,6 @@ button:focus {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: 120px;
     position: relative;
     /* z-index: -1; */
     /*placed behind the profile picture to be able to click that*/
@@ -1508,7 +1661,7 @@ button:focus {
   }
 
   .main__heading {
-    font-size: 44px;
+    font-size: 52px;
   }
 
   .navigation-list {
@@ -1579,6 +1732,7 @@ button:focus {
     width: 90%;
     font-size: 16px;
   }
+
 }
 
 /*
