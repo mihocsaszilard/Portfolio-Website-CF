@@ -644,20 +644,30 @@ button:focus,
   width: 90vw;
   transform: translateX(-5%);
   height: 300px;
-  margin-top: 200px;
+  margin-top: 300px;
   overflow: hidden;
 }
 
-.tech-stack div {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  margin: auto 20px;
-  height: 150px;
-  animation: marquee 60s linear infinite;
+.tech-stack span {
+  display: block;
+  width: 5850px;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 30s linear infinite;
 }
 
-.tech-stack:hover div{
+.tech-stack span:first-child {
+  transform: translateX(50%);
+}
+
+.tech-stack div {
+  float: left;
+  height: 100px;
+  margin: auto 40px;
+}
+
+.tech-stack:hover span {
   animation-play-state: paused;
 }
 
@@ -667,9 +677,8 @@ button:focus,
 }
 
 @keyframes marquee {
-  0% { left: 2%; }
-  50% { left: -40%; }
-  100% { left: 2%}
+  0% { left: 0; }
+  100% { left: -2922px; }
 }
 
 /*------------Profile Picture animation----------------*/
@@ -1037,8 +1046,11 @@ button:focus,
 }
 
 .school {
-  display: inline-block;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
 .school-text,
@@ -1073,7 +1085,7 @@ button:focus,
   left: 50%;
 }
 
-.chemistry {
+.drill {
   top: 60%;
   left: 75%;
 }
@@ -1088,7 +1100,7 @@ button:focus,
   left: 39%;
 }
 
-.drill {
+.chemistry {
   top: 20%;
   left: 65%;
 }
@@ -1107,6 +1119,57 @@ button:focus,
   top: 28%;
   left: 86%;
 }
+
+.capital {
+  font-size: 50px; 
+  font-family: 'Times New Roman';
+  line-height: 1;
+}
+
+.date {
+  font-size: 60px;
+  font-family: 'Righteous', cursive;
+  text-shadow: 0 0 30px var(--darkest-purple);
+  color: var(--almost-white);
+  text-align: center;
+  padding: 30px;
+}
+
+.bio-img {
+  margin-bottom: 10px;
+  background-size: cover;
+  overflow: visible;
+  border: 2px solid var(--almost-white);
+  margin-right: 18px;
+  transition: 0.4s;
+  box-shadow: inset 15px 0 10px var(--almost-white),
+  inset -15px 0 10px var(--almost-white);
+}
+
+.umftgm {
+  background-image: url(./../img/umfst.jpg);
+}
+
+.grro {
+  background-image: url(./../img/grro.jpg);
+}
+
+.sapi {
+  background-image: url(./../img/sapi.jpg);
+}
+
+.freelance {
+  background-image: url(./../img//freelance.jpg);
+}
+
+.cf {
+  background-image: url(./../img/cf.jpg);
+}
+
+.bio-img:hover {
+  transform: scale(1.1);
+}
+
 
 /*-----------------------section two end------------------------*/
 .copyright {
@@ -1185,9 +1248,22 @@ button:focus,
     width: 90%;
     font-size: 24px;
   }
+
+  .about-me {
+    width: 150%;
+  }
+
 }
 
 @media all and (max-width: 750px) {
+  
+  .about-me__item {
+    text-align: center;
+  }
+
+  .school {
+    grid-template-columns: 1fr;
+  }
   .project-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -1414,6 +1490,7 @@ button:focus,
     width: 90%;
     font-size: 16px;
   }
+
 }
 
 /*
