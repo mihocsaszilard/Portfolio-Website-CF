@@ -50,7 +50,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 1px;
   /* Remove scrollbar space */
   background: transparent;
   /* Optional: just make scrollbar invisible */
@@ -58,7 +58,7 @@ html {
 
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background: #ff0000;
+  background: rgba(17, 1, 8, 1);
 }
 
 body {
