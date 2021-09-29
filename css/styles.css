@@ -1002,7 +1002,25 @@ button:focus,
     background-size: cover;
   }
 
+  .chatME {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.7)),
+        to(rgba(0, 0, 0, 0.5))
+      ),
+      url(../img/chatME.PNG);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+      url(../img/chatME.PNG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+      url(../img/chatME.PNG);
+    background-position: center;
+    background-size: cover;
+  }
+
   .project-list__item {
+    border-radius: 15px;
     max-width: 80%;
     margin-bottom: 30px;
     margin-left: 3vw;
@@ -1060,6 +1078,7 @@ button:focus,
     width: 100%;
     margin-top: 50%;
     transform: translateY(-50%);
+    border-bottom: 1px solid var(--turquoise-hightight);
   }
 
   .project-description:first-child {
