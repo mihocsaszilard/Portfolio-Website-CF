@@ -670,7 +670,7 @@ button:focus,
   width: 90vw;
   transform: translateX(-5%);
   height: 300px;
-  margin-top: 300px;
+  margin-top: 400px;
   overflow: hidden;
 }
 
@@ -1527,7 +1527,7 @@ button:focus,
       from(rgba(17, 1, 8, 0.9)),
       to(rgba(17, 1, 8, 1))
     );
-    );
+
     background-image: -o-linear-gradient(
       right,
       rgba(17, 1, 8, 0.9),
