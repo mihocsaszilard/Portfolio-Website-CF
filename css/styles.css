@@ -142,6 +142,11 @@ main {
   background-color: var(--darkest-purple);
 }
 
+.body-about {
+  width: 100%;
+  margin-top: 400px;
+}
+
 .main-about {
   height: 100vh;
   display: grid;
@@ -1161,6 +1166,15 @@ button:focus,
 .hide {
   opacity: 0;
   left: 0;
+}
+
+.hidden {
+  opacity: 0 !important;
+  right: -100%;
+}
+
+.visible {
+  opacity: 1;
 }
 
 .show {
