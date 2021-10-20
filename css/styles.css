@@ -1120,6 +1120,7 @@ button:focus,
       var(--darkest-purple),
       rgba(0, 0, 0, 0.4)
     );
+    border-radius: 10px;
   }
 
   .project-img img {
