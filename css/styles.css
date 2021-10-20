@@ -940,6 +940,70 @@ button:focus,
 /*
 ------------------Contact form end----------
 */
+
+/*
+-----------------STACK---------------------------
+*/
+
+#techStack {
+  background-color: var(--darkest-purple);
+  padding: 20px;
+  box-shadow: 0 0 20px var(--darkest-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#techStack div {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#techStack img {
+  height: 35px;
+  border-radius: 5px;
+  background-color: var(--heading-color);
+  border: 1px solid var(--heading-color);
+}
+
+#techStack progress {
+  width: 350px;
+}
+
+progress {
+  border: none;
+  width: 400px;
+  height: 5px;
+}
+
+progress {
+  color: var(--turquoise-hightight);
+}
+
+progress::-webkit-progress-value {
+  background: var(--turquoise-hightight);
+}
+
+progress::-moz-progress-bar {
+  background: var(--text-color);
+}
+
+progress::-webkit-progress-value {
+  background: var(--turquoise-hightight);
+}
+
+progress::-webkit-progress-bar {
+  background: var(--text-color);
+}
+/*
+-----------------STACK---------------------------
+*/
+
 @supports (display: grid) {
   .project-list {
     width: 80%;
