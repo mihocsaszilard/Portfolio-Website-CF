@@ -47,6 +47,7 @@ var(--heading-color)
 html {
   overflow: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -799,24 +800,42 @@ button:focus,
 }
 
 .information {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 680px;
+  background-color: var(--text-color);
+  float: right;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  font-size: 30px;
+  border-radius: 20px;
+  padding-left: 100px;
+}
+
+.information img {
+  height: 55px;
+  margin: 10px;
 }
 
 .cover-photo {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .contact-form-wrapper {
-  width: 100%;
+  width: 40vw !important;
   max-width: 750px;
   max-height: 640px;
-  margin: auto;
+  margin-bottom: 100px;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 25px 25px 0 0;
-  z-index: -1;
+  background-color: var(--darkest-purple);
+  z-index: 1;
   position: relative;
+  border-radius: 20px;
 }
 
 .contact-element {
@@ -851,6 +870,8 @@ button:focus,
   position: absolute;
   width: 100%;
   max-width: 600px;
+  background-color: var(--darkest-purple);
+  z-index: 999;
 }
 
 .form-control input {
@@ -1352,10 +1373,18 @@ button:focus,
   margin: 0;
 }
 
+#contact {
+  margin-top: 1000px;
+}
+
 /*
 --------------------Media Queries-------------------
 */
 @media all and (min-width: 1023px) and (max-width: 1200px) {
+  #contact {
+    margin-top: 1500px;
+  }
+
   .placeholder {
     height: 100%;
   }
@@ -1372,12 +1401,21 @@ button:focus,
   .toggler-location-row {
     margin-top: 10%;
   }
+
+  .information {
+    margin-top: 0;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrapper {
+    margin-top: 500px;
+    width: 80vw;
   }
 }
 
@@ -1406,10 +1444,20 @@ button:focus,
 
   .contact-form-wrapper {
     height: 700px;
+    width: 80vw;
   }
 }
 
 @media all and (min-width: 750px) and (max-width: 1023px) {
+  .information {
+    margin-top: 500px;
+    padding: 20px;
+  }
+
+  #contact {
+    margin-top: 1550px;
+  }
+
   .placeholder {
     height: 160%;
   }
@@ -1426,6 +1474,16 @@ button:focus,
 }
 
 @media all and (max-width: 750px) {
+  .information {
+    margin-top: 800px;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  #contact {
+    margin-top: 1600px;
+  }
+
   .about-me__item {
     text-align: center;
   }
@@ -1650,6 +1708,10 @@ button:focus,
 }
 
 @media all and (max-width: 500px) {
+  #contact {
+    margin-top: 1900px;
+  }
+
   #rotating-text span {
     font-size: var(--biggest-font);
     width: auto;
@@ -1682,7 +1744,9 @@ button:focus,
   }
 
   .contact-form-wrapper {
-    margin-top: -40px;
+    width: 80vw !important;
+    margin-top: 40px;
+    z-index: 999;
   }
 
   #projects {

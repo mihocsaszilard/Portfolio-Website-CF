@@ -56,13 +56,13 @@
 
         </li>
         <li role="presentation">
-          <a class="navigation-list__item" href="about.html" role="menuitem">About</a>
+          <a class="navigation-list__item" href="#about" role="menuitem">About</a>
         </li>
         <li role="presentation">
-          <a class="navigation-list__item" href="work.html" role="menuitem">Projects</a>
+          <a class="navigation-list__item" href="#projects" role="menuitem">Projects</a>
         </li>
         <li role="presentation">
-          <a class="navigation-list__item" href="contact.html" role="menuitem">Get in Touch!</a>
+          <a class="navigation-list__item" href="#contact" role="menuitem">Get in Touch!</a>
         </li>
       </ul>
       <!--Mobile navigation-->
@@ -231,7 +231,7 @@
 
 
     <!-- Main content -->
-    <main class="main-about">
+    <main class="main-about" id="about">
       <div class="about-me__img">
         <img id="poster" class="poster" src="img/poster-me-33.png" alt="Poster of Mihocsa Szilard">
         <div class="about-me">
@@ -453,6 +453,7 @@
       </div>
     </main>
 
+
     <!-- Footer with links to social media profiles -->
     <footer class="page__footer">
       <!--<p class="page__footer-text">Find me on:</p>-->
@@ -485,6 +486,71 @@
     <script src="js/motions.js"></script>
     <!-- <script src="js/tota11y.min.js"></script> -->
   </section>
+
+  <section id="contact">
+    <h1 class="page-heading">Contact me!</h1>
+
+    <div class="contact-form-wrapper">
+      <img class="cover-photo" src="img/cover-photo.png" alt=" home office cover photo">
+      <form action="mailto:mihocsa48@gmail.com" enctype="text/plain" method="post" id="contact-form">
+        <div class="form-control">
+          <img class="contact-form-mail" src="img/mail.svg" alt="mail icon">
+        </div>
+        <div class="form-control">
+          <input type="text" class="contact-element" id="contact-name" placeholder="your name" required>
+        </div>
+        <div class="form-control">
+          <!--<label class="form-element standard-label" for="contact-email">  </label>-->
+          <input type="text" class="contact-element" id="contact-email" placeholder="your e-mail" required>
+        </div>
+        <!--<div class="form-control">
+          <label class="form-element standard-label" for="contact-password">Password: </label>
+          <input type="password" class="contact-element" id="contact-password" minlength="8" maxlength="20" required>
+        </div>-->
+        <div class="form-control">
+          <!--  <label class="form-element standard-label" for="contact-phone"> </label>-->
+          <input type="tel" class="contact-element" id="contact-phone" placeholder="your phone number">
+
+        </div>
+        <div class="form-control">
+          <!--    <label class="form-element standard-label" for="contact-textarea"> </label>-->
+          <textarea maxlength="240" class="contact-element" id="contact-textarea" placeholder="your message"
+            required></textarea>
+        </div>
+        <div class="form-control">
+          <button class="button__prymary button__submit" type="submit" value="Send">
+            <img src="img/send.svg" alt="send icon" />
+          </button>
+        </div>
+      </form>
+
+    </div>
+
+    </div>
+    <div class="information">
+      <div></div>
+      <div class="social-info">
+        <p>e-mail is so 2010, let's connect! </p>
+        <!-- Github logo -->
+        <a href="https://github.com/mihocsaszilard/" target="_blank">
+          <img class="social-media-phone__icon" src="img/github.svg" alt="GitHub">
+        </a>
+
+        <!-- Codepen logo -->
+        <a href="https://codepen.io/mihocsa48/" target="_blank">
+          <img class="social-media-phone__icon" src="img/codepen.svg" alt="CodePen">
+        </a>
+
+        <!-- LinkedIn logo -->
+        <a href="https://www.linkedin.com/in/mihocsaszilard/" target="_blank">
+          <img class="social-media-phone__icon" src="img/linkedin.svg" alt="LinkedIn">
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- <p style="font-size: 80px; height: 100px; text-align: center; color: var(--darkest-purple);">Bye!</p> -->
 
   <script src="js/motions.js"></script>
   <!-- <script src="js/tota11y.min.js"></script> -->
