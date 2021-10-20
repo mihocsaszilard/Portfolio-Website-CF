@@ -12,7 +12,7 @@ var myScrollFunc = function () {
 
 var opacityScroll = function () {
   var y = window.scrollY;
-  if (y >= 2300 && y <= 5000) {
+  if (y >= 2300) {
     showPoster.className = "visible";
   } else {
     showPoster.className = "hidden";
