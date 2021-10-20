@@ -145,17 +145,17 @@ main {
 .body-about {
   width: 100%;
   margin-top: 400px;
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1)
+  ); */
 }
 
 .main-about {
   height: 100vh;
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  background-image: linear-gradient(
-    to top left,
-    var(--darkest-purple),
-    rgba(0, 0, 0, 0.7)
-  );
+  grid-template-columns: 1fr;
 }
 
 .about-me__img img {
@@ -164,7 +164,7 @@ main {
   right: 0;
   max-height: 90%;
   max-width: 90%;
-  opacity: 0.6;
+  opacity: 0;
   transform: scaleX(-1);
 }
 
@@ -176,14 +176,17 @@ main {
   padding-top: 0;
   display: grid;
   grid-template-columns: 1fr;
+  background-color: rgba(31, 16, 21, 0.8);
+  box-shadow: 0 0 100px 100px rgba(31, 16, 21, 0.825);
 }
 
 .about-me h1 {
   font-size: var(--biggest-font);
+  color: white;
 }
 
 .about-me__item {
-  color: white;
+  color: rgb(233, 233, 233);
   mix-blend-mode: screen;
   font-size: 18px;
   text-align: left;
@@ -241,6 +244,7 @@ main {
   top: 0;
   left: 0;
   background-color: var(--darkest-purple);
+  z-index: 100;
   /*  box-shadow: var(--medium-box-shadow);*/
 }
 
@@ -661,6 +665,12 @@ button:focus,
 .button__secondary {
   border: 0.5px solid;
   background-color: transparent;
+}
+
+.toProjectsBtn {
+  background-color: var(--darkest-purple);
+  margin-bottom: 40px;
+  height: 50px;
 }
 
 .button-img {
@@ -1175,7 +1185,7 @@ button:focus,
 }
 
 .visible {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .show {
@@ -1411,7 +1421,7 @@ button:focus,
   }
 
   .about-me {
-    width: 150%;
+    width: auto;
   }
 }
 
@@ -1589,6 +1599,7 @@ button:focus,
     width: 100vw;
     max-width: 100%;
     height: 60px;
+    z-index: 999;
   }
 
   .page__footer-text {
@@ -1631,6 +1642,11 @@ button:focus,
   .copyright {
     display: none;
   }
+
+  .toProjectsBtn {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -1667,6 +1683,12 @@ button:focus,
 
   .contact-form-wrapper {
     margin-top: -40px;
+  }
+
+  #projects {
+    width: 100vw;
+    margin: 0;
+    transform: translateX(-10%);
   }
 
   .project-list__item {
