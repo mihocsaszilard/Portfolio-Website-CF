@@ -1217,6 +1217,7 @@ progress::-webkit-progress-bar {
       rgba(0, 0, 0, 0.4)
     );
     border-radius: 10px;
+    padding: 10px;
   }
 
   .project-img img {
