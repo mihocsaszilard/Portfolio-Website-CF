@@ -1375,6 +1375,7 @@ progress::-webkit-progress-bar {
   border: none;
   transition: 0.02s ease-out;
   animation: scale 1.5s infinite ease-in-out;
+  mix-blend-mode: difference;
 }
 
 .link {

@@ -23,13 +23,11 @@ function mouseMoveHandler(e) {
     cursor.style.transform = "scale(3)";
     lazy.style.transform = "scale(8)";
     lazy.style.background = "rgb(255, 154, 60)";
-    lazy.style.mixBlendMode = "difference";
+
     cursor.style.boxShadow = "0 0 5px rgb(255, 154, 60)";
   } else {
     cursor.style.boxShadow = "none";
-    lazy.style.mixBlendMode = "normal";
-
-    lazy.style.background = "rgba(255, 154, 60, 0.5)";
+    lazy.style.background = "rgba(255, 154, 60, 0.8)";
   }
 }
 
