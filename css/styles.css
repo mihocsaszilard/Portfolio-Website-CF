@@ -1373,7 +1373,7 @@ progress::-webkit-progress-bar {
   width: 10px;
   height: 10px;
   border: none;
-  animation: scale 2s infinite ease-in-out;
+  animation: scale 1.5s infinite ease-in-out;
 }
 
 .link {
