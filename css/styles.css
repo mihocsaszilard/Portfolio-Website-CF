@@ -97,13 +97,13 @@ h2 {
 }
 
 h3 {
-  color: #8e808d;
+  color: var(--heading-color);
   font-size: 22px;
   font-weight: 300;
 }
 
 p {
-  color: #aa9faa;
+  color: var(--heading-color);
 }
 
 main {
@@ -168,6 +168,10 @@ main {
   max-width: 90%;
   opacity: 0;
   transform: scaleX(-1);
+}
+
+#poster {
+  z-index: 5;
 }
 
 .about-me {
@@ -831,7 +835,7 @@ button:focus,
   width: 40vw !important;
   max-width: 750px;
   max-height: 640px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   align-items: center;
   background-color: var(--darkest-purple);
   z-index: 1;
@@ -955,6 +959,7 @@ button:focus,
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  z-index: 100;
 }
 
 #techStack div {
@@ -1007,18 +1012,18 @@ progress::-webkit-progress-bar {
 
 @supports (display: grid) {
   .project-list {
-    width: 80%;
     margin: 0;
     margin-bottom: 70px;
   }
 
   #projects {
+    height: 2200px;
     z-index: 1;
   }
 
   .project-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 
@@ -1143,7 +1148,8 @@ progress::-webkit-progress-bar {
 
   .project-list__item {
     border-radius: 15px;
-    max-width: 80%;
+    width: 100%;
+    height: 500px;
     margin-bottom: 30px;
     margin-left: 3vw;
     margin-right: 3vw;
@@ -1157,7 +1163,7 @@ progress::-webkit-progress-bar {
   }
 
   .project-list__item:hover {
-    max-width: 85%;
+    width: 105%;
   }
 
   .project-title,
@@ -1198,24 +1204,29 @@ progress::-webkit-progress-bar {
 
   .project-description {
     font-size: 20px;
-    width: 100%;
-    margin-top: 50%;
-    transform: translateY(-50%);
     border-bottom: 1px solid var(--turquoise-hightight);
   }
 
   .project-description:first-child {
-    margin-top: 200px;
+    margin-top: 20px;
+  }
+
+  .project-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      var(--darkest-purple),
+      rgba(2, 0, 1, 0.7)
+    );
+    padding: 15px;
+    margin: 45px 0;
+    border-radius: 20px;
   }
 
   .project-details {
-    width: 200%;
+    max-width: 40%;
     margin-bottom: 30px;
-    box-shadow: 0 0 20px black;
-    background-image: linear-gradient(
-      var(--darkest-purple),
-      rgba(0, 0, 0, 0.4)
-    );
     border-radius: 10px;
     padding: 10px;
   }
@@ -1256,7 +1267,6 @@ progress::-webkit-progress-bar {
   z-index: 2;
   height: 100%;
   width: var(--complete-width);
-  background: var(--almost-white);
   float: left;
   transition: all 1.5s;
 }
@@ -1272,7 +1282,7 @@ progress::-webkit-progress-bar {
 }
 
 .visible {
-  opacity: 1 !important;
+  opacity: 0.7 !important;
 }
 
 .show {
@@ -1284,7 +1294,7 @@ progress::-webkit-progress-bar {
   /* border: 1px solid black; */
   margin: 0 auto;
   margin-top: 5%;
-  width: 60%;
+  width: 80%;
   font-size: 20px;
 }
 
@@ -1292,16 +1302,16 @@ progress::-webkit-progress-bar {
   font-size: 32px;
   font-weight: 300;
   text-align: left;
-  color: var(--text-color);
+  color: var(--almost-white);
 }
 
 .text-left {
   text-align: left;
-  color: var(--text-color);
+  color: var(--almost-white);
 }
 
 .darker-text {
-  color: var(--text-color);
+  color: var(--almost-white);
 }
 
 .school {
@@ -1312,71 +1322,8 @@ progress::-webkit-progress-bar {
   margin-bottom: 100px;
 }
 
-.school-text,
-.university-text {
-  width: 85%;
-  text-align: center;
-  margin: auto;
-}
-
-.math,
-.math2,
-.chemistry,
-.electricity,
-.electricity2,
-.drill,
-.coding,
-.coding2,
-.datebase {
-  height: 50px;
-  margin-top: 5%;
-  position: absolute;
-  opacity: 0.4;
-}
-
-.math {
-  top: 15%;
-  left: 10%;
-}
-
-.math2 {
-  top: 38%;
-  left: 50%;
-}
-
-.drill {
-  top: 60%;
-  left: 75%;
-}
-
-.electricity {
-  top: 48%;
-  left: 16%;
-}
-
-.electricity2 {
-  top: 65%;
-  left: 39%;
-}
-
-.chemistry {
-  top: 20%;
-  left: 65%;
-}
-
-.coding {
-  top: 72%;
-  left: 66%;
-}
-
-.coding2 {
-  top: 22%;
-  left: 26%;
-}
-
-.datebase {
-  top: 28%;
-  left: 86%;
+.u-text {
+  border-bottom: 1px solid var(--turquoise-hightight);
 }
 
 .capital {
@@ -1386,23 +1333,26 @@ progress::-webkit-progress-bar {
 }
 
 .date {
-  font-size: 60px;
+  font-size: 50px;
   font-family: "Righteous", cursive;
-  text-shadow: 0 0 30px var(--darkest-purple);
-  color: var(--almost-white);
+  text-shadow: 0 0 10px var(--almost-white);
+  color: var(--darkest-purple);
   text-align: center;
+  margin: auto;
+  font-weight: 900;
   padding: 30px;
 }
 
 .bio-img {
+  height: 200px;
   margin-bottom: 10px;
   background-size: cover;
   overflow: visible;
-  border: 2px solid var(--almost-white);
+  border-radius: 10px;
   margin-right: 18px;
   transition: 0.4s;
-  box-shadow: inset 15px 0 10px var(--almost-white),
-    inset -15px 0 10px var(--almost-white);
+  box-shadow: inset 15px 0 10px var(--darkest-purple),
+    inset -15px 0 10px var(--darkest-purple);
 }
 
 .umftgm {
@@ -1434,30 +1384,25 @@ progress::-webkit-progress-bar {
   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0;
   font-size: 14px;
   margin: 0;
-}
-
-#contact {
-  margin-top: 1000px;
 }
 
 /*
 --------------------Media Queries-------------------
 */
 @media all and (min-width: 1023px) and (max-width: 1200px) {
-  #contact {
-    margin-top: 1500px;
-  }
-
   .placeholder {
     height: 100%;
   }
 
+  .main-about {
+    height: 65vh;
+  }
+
   .section-one,
   .profile {
-    height: 100vh;
+    height: 70vh;
   }
 
   .main__heading {
@@ -1520,10 +1465,6 @@ progress::-webkit-progress-bar {
     padding: 20px;
   }
 
-  #contact {
-    margin-top: 1550px;
-  }
-
   .placeholder {
     height: 160%;
   }
@@ -1544,10 +1485,6 @@ progress::-webkit-progress-bar {
     margin-top: 800px;
     grid-template-columns: 1fr;
     padding: 20px;
-  }
-
-  #contact {
-    margin-top: 1600px;
   }
 
   .about-me__item {
@@ -1774,10 +1711,6 @@ progress::-webkit-progress-bar {
 }
 
 @media all and (max-width: 500px) {
-  #contact {
-    margin-top: 1900px;
-  }
-
   #rotating-text span {
     font-size: var(--biggest-font);
     width: auto;
@@ -1811,7 +1744,7 @@ progress::-webkit-progress-bar {
 
   .contact-form-wrapper {
     width: 80vw !important;
-    margin-top: 40px;
+    margin-top: 140px;
     z-index: 999;
   }
 
@@ -1819,6 +1752,7 @@ progress::-webkit-progress-bar {
     width: 100vw;
     margin: 0;
     transform: translateX(-10%);
+    margin-bottom: 0;
   }
 
   .project-list__item {
@@ -1826,7 +1760,6 @@ progress::-webkit-progress-bar {
   }
 
   .project-description {
-    width: 100%;
     text-align: center;
     font-size: 18px;
   }
@@ -1836,7 +1769,8 @@ progress::-webkit-progress-bar {
   }
 
   .project-details {
-    padding-top: 45%;
+    padding-top: 5%;
+    min-width: 90vw;
   }
 
   .project-button {
@@ -1847,13 +1781,45 @@ progress::-webkit-progress-bar {
     margin-top: 80px;
   }
 
+  .toProjectsBtn {
+    margin-top: -20px;
+  }
+
   .text-info {
     width: 90%;
     font-size: 16px;
   }
+
+  .contact-form-wrapper {
+    margin-top: 450px;
+  }
+
+  #contact {
+    padding-top: 150px;
+  }
+
+  .information {
+    margin-top: 0;
+    height: 300px;
+    margin-bottom: 200px;
+    z-index: 99;
+  }
 }
 
 @media all and (max-width: 1200px) {
+  #techStack progress {
+    width: 250px;
+  }
+
+  #projects {
+    margin-bottom: 400px;
+  }
+
+  .project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .project-container {
     display: flex;
     flex-direction: column;
@@ -1870,13 +1836,17 @@ progress::-webkit-progress-bar {
 
   .project-details {
     text-align: center;
-    width: 100%;
+    min-width: 70vw;
     margin: 0;
-    margin-top: -100px;
   }
 
   .project-description {
     width: 100%;
+  }
+
+  .date {
+    font-size: 40px;
+    margin: auto;
   }
 }
 

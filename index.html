@@ -117,10 +117,10 @@
           alt="Mihocsa Szilard Portrait">
       </label>
 
-      <div class="parallax-container">
-        <div class="white-part"></div>
-        <div class="white-part white-part-two"></div>
-      </div>
+      <!-- <div class="parallax-container">
+        <div class="white-part" id="white"></div>
+        <div class="white-part white-part-two" id="white2"></div>
+      </div> -->
 
       <div class="profile__content">
         <h1 class="parallax main__heading" data-value="-2"><span>Hello! I`m</span></h1>
@@ -134,8 +134,8 @@
               <span class="programmer-text"> &lt;programmer&gt; </span>
             </span>
           </div>
-          <h3 class="parallax toggler-location-row" data-value="-1"><img class="located-icon" src="img/location.svg"
-              alt="located"> Bavaria, Germany</h3>
+          <!-- <h3 class="parallax toggler-location-row" data-value="-1"><img class="located-icon" src="img/location.svg"
+              alt="located"> Bavaria, Germany</h3> -->
         </div>
       </div>
 
@@ -230,13 +230,13 @@
     <section class="section-two">
       <div class="placeholder" id="placeholder">
         <div class="text-info">
-          <h2 class="info-title">Biography</h2>
+          <h1 class="page-heading">Biography</h1>
 
           <div class="school">
             <div class="bio-img umftgm">
               <h3 class="date ">2013 - 2016</h3>
             </div>
-            <h3><span class="capital">I</span> am a graduate student
+            <h3 class="u-text"><span class="capital">I</span> am a graduate student
               in the
               Department of Pharmacy at the
               <em>George Emil Palade
@@ -244,7 +244,7 @@
                 Medicine, Pharmacy, Science, and Technology of Târgu Mureş</em>
             </h3>
             <div>
-              <h3 class="school-text">
+              <h3 class="u-text">
 
                 <span class="capital">P</span>reviously, I worked as a chemistry operator at <em>Gedeon Richter
                   Romania,</em> Technological Development Compartiment
@@ -266,7 +266,7 @@
             </div>
 
             <div class="electrician">
-              <h3 class="university-text">
+              <h3 class="u-text">
                 <span class="capital">A</span>t the same time studied Computer Science at the <em>Sapientia Hungarian
                   University of
                   Transylvania</em>
@@ -275,7 +275,7 @@
               <img src="img/electricity2.svg" alt="cable" class="electricity2 parallax" data-value="3">
               <img src="img/drill.svg" alt="drill" class="drill parallax" data-value="4"> -->
             </div>
-            <h3 class="university-text">
+            <h3 class="u-text">
               <span class="capital">P</span>articipated in a few full stack development projects, saw Ionic, Angular,
               SQL
               and other
@@ -291,7 +291,7 @@
             <div class="bio-img cf">
               <h3 class="date">2021 </h3>
             </div>
-            <h3 class="university-text">
+            <h3 class="u-text">
               <span class="capital">S</span>tarted to learn Full Stack Web Development at the <em>CareerFoundry</em>
             </h3>
 
@@ -380,68 +380,75 @@
       <h1 class="page-heading">Latest projects</h1>
       <div class="project-list">
         <div class="project-container">
-          <div class="project-list__item cinemApp-angular">
-            <h3 class="on-project-title">cinemApp - Angular</h3>
-            <!-- <div class="btn-container"> -->
-            <a class="button project-button button__secondary" target="_blank"
-              href="https://mihocsaszilard.github.io/cinemApp-Angular-client/"> Visit page</a>
-            <a class="button project-button button__secondary button__github" target="_blank"
-              href="https://github.com/mihocsaszilard/cinemApp-Angular-client">Github</a>
-            <!-- </div> -->
-          </div>
-
-          <div class="project-details">
-            <p class="project-description">
-              <b>cinemApp - Angular</b> is the client-side for an application called cinemApp based on its existing
-              server-side code (REST API and database), with supporting documentation.
-            </p>
-          </div>
-
-          <div class="project-list__item chatME">
-            <h3 class="on-project-title">chatME</h3>
-            <div class="btn-container">
-              <!-- <a class="button project-button button__secondary" target="_blank" -->
-              <!-- href="https://mihocsaszilard.github.io/meet/"> Visit page</a> -->
+          <div class="project-wrapper">
+            <div class="project-list__item cinemApp-angular">
+              <h3 class="on-project-title">cinemApp - Angular</h3>
+              <!-- <div class="btn-container"> -->
+              <a class="button project-button button__secondary" target="_blank"
+                href="https://mihocsaszilard.github.io/cinemApp-Angular-client/"> Visit page</a>
               <a class="button project-button button__secondary button__github" target="_blank"
-                href="https://github.com/mihocsaszilard/chatME">Github</a>
+                href="https://github.com/mihocsaszilard/cinemApp-Angular-client">Github</a>
+              <!-- </div> -->
+            </div>
+
+            <div class="project-details">
+              <p class="project-description">
+                <b>cinemApp - Angular</b> is the client-side for an application called cinemApp based on its existing
+                server-side code (REST API and database), with supporting documentation.
+              </p>
             </div>
           </div>
 
-          <div class="project-details">
-            <p class="project-description">
-              <b>chatME</b> is a chat app for mobile devices using React Native.
-              The app will provide users with a chat interface and options to share images and their location.
-            </p>
+          <div class="project-wrapper">
+            <div class="project-list__item chatME">
+              <h3 class="on-project-title">chatME</h3>
+
+              <!-- <a class="button project-button button__secondary" target="_blank"
+                href="https://mihocsaszilard.github.io/meet/"> Visit page</a> -->
+              <a class="button project-button button__secondary button__github" target="_blank"
+                href="https://github.com/mihocsaszilard/chatME">Github</a>
+
+            </div>
+
+            <div class="project-details">
+              <p class="project-description">
+                <b>chatME</b> is a chat app for mobile devices using React Native.
+                The app will provide users with a chat interface and options to share images and their location.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="project-wrapper">
+
+            <div class="project-list__item meetME">
+              <h3 class="on-project-title">meetME</h3>
+              <!-- <div class="btn-container"> -->
+              <a class="button project-button button__secondary" target="_blank"
+                href="https://mihocsaszilard.github.io/meet/"> Visit page</a>
+              <a class="button project-button button__secondary button__github" target="_blank"
+                href="https://github.com/mihocsaszilard/meet">Github</a>
+              <!-- </div> -->
+            </div>
+
+            <div class="project-details">
+              <p class="project-description">
+                <b>meetME</b> is a serverless, progressive web application (PWA) with React using a test-driven
+                development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
+                After Login users can search events by cities, open a modal with more details, show/hide statistics
+                about
+                events.
+              </p>
+            </div>
+
           </div>
         </div>
-
-        <div class="project-container">
-          <div class="project-list__item meetME">
-            <h3 class="on-project-title">meetME</h3>
-            <!-- <div class="btn-container"> -->
-            <a class="button project-button button__secondary" target="_blank"
-              href="https://mihocsaszilard.github.io/meet/"> Visit page</a>
-            <a class="button project-button button__secondary button__github" target="_blank"
-              href="https://github.com/mihocsaszilard/meet">Github</a>
-            <!-- </div> -->
-          </div>
-
-          <div class="project-details">
-            <p class="project-description">
-              <b>meetME</b> is a serverless, progressive web application (PWA) with React using a test-driven
-              development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
-              After Login users can search events by cities, open a modal with more details, show/hide statistics about
-              events.
-            </p>
-          </div>
-        </div>
-      </div>
-      <a href="https://mihocsaszilard.github.io/Portfolio-Website-CF/work.html">
-        <button class="toProjectsBtn">More projects</button>
-      </a>
+        <a href="https://mihocsaszilard.github.io/Portfolio-Website-CF/work.html">
+          <button class="toProjectsBtn">More projects</button>
+        </a>
 
       </div>
-      </div>
+
 
       <div class="social-media-desktop">
         <ul>
@@ -494,7 +501,7 @@
       </div>
     </footer>
 
-    <p class="copyright"> 2021 | Mihocsa Szilard </p>
+    <!-- <p class="copyright"> 2021 | Mihocsa Szilard </p> -->
 
   </section>
 
@@ -538,7 +545,7 @@
 
     </div>
 
-    </div>
+
     <div class="information">
       <div></div>
       <div class="social-info">
