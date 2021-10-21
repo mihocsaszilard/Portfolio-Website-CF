@@ -960,6 +960,7 @@ button:focus,
   flex-direction: row;
   flex-wrap: wrap;
   z-index: 100;
+  border-radius: 20px;
 }
 
 #techStack div {
