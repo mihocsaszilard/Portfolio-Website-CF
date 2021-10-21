@@ -29,7 +29,7 @@ function mouseMoveHandler(e) {
     cursor.style.boxShadow = "none";
     lazy.style.mixBlendMode = "normal";
 
-    lazy.style.background = "rgba(255, 154, 60, 0)";
+    lazy.style.background = "rgba(255, 154, 60, 0.5)";
   }
 }
 
