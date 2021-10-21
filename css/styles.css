@@ -29,7 +29,7 @@ var(--heading-color)
     rgba(29, 0, 27, 1)
   );
   --heading-color: #e3dfe3;
-  --turquoise-hightight: rgb(66, 178, 200);
+  --turquoise-hightight: rgb(55, 187, 180);
   --text-color: #564054;
   --darkest-purple: #110108;
   --deep-black: #171717;
@@ -147,6 +147,16 @@ main {
 */
 .main-navigation {
   background-color: var(--darkest-purple);
+}
+
+#navLine {
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  background-color: var(--turquoise-hightight);
 }
 
 .body-about {
@@ -459,11 +469,8 @@ main {
 }
 
 .name-highlight {
-  font-weight: 300;
-  color: var(--darkest-purple);
-  text-shadow: -1px -1px 0 rgba(214, 255, 245, 1),
-    1px -1px 0 rgba(214, 255, 245, 1), -1px 1px 0 rgba(214, 255, 245, 1),
-    1px 1px 0 rgba(214, 255, 245, 1);
+  font-weight: 600;
+  color: #bb373e;
 }
 
 .main__paragraph {
@@ -512,7 +519,7 @@ h3.main__paragraph {
 }
 
 .programmer-text {
-  color: var(--almost-white);
+  color: white;
   font-family: "Inconsolata", monospace;
 }
 
@@ -828,6 +835,7 @@ button:focus,
 .contact-form-mail {
   height: 60px;
   width: auto;
+  color: var(--turquoise-hightight);
 }
 
 .form-control {
@@ -1135,7 +1143,7 @@ progress::-webkit-progress-bar {
     margin-top: 0;
     font-size: 42px;
     font-weight: 600;
-    color: rgb(66, 178, 200);
+    color: var(--turquoise-hightight);
     text-shadow: 10px 10px 10px black;
   }
 
@@ -1358,7 +1366,7 @@ progress::-webkit-progress-bar {
   position: fixed;
   display: inline-block;
   border-radius: 50%;
-  border: 2px solid rgb(255, 154, 60);
+  border: 2px solid var(--turquoise-hightight);
   width: 30px;
   height: 30px;
   left: 20px;
@@ -1380,6 +1388,29 @@ progress::-webkit-progress-bar {
 
 .link {
   cursor: none !important;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--turquoise-hightight);
+  z-index: 99;
+  transition: 0.3s;
+}
+
+.to-top img {
+  height: 50px;
+  transform: rotate(-90deg);
+  background-color: var(--darkest-purple);
+  opacity: 0.5;
+}
+
+.to-top:hover {
+  transform: scale(1.3);
 }
 
 @keyframes scale {
@@ -1722,6 +1753,10 @@ progress::-webkit-progress-bar {
     font-size: var(--biggest-font);
     width: auto;
     padding-left: 0;
+  }
+
+  .to-top {
+    display: none;
   }
 
   .main__heading {

@@ -22,10 +22,10 @@
 
 <body class="index-body">
 
-
-
   <!-- Header including the logo and the main navigation -->
   <header class="page-header">
+
+    <div id="navLine"></div>
     <!-- your logo here -->
     <a class="link" href="index.html"><img class="personal-logo link" src="img/mihocsa-szilard-logo2.svg"
         alt="Personal logo of Mihocsa Szilard"></a>
@@ -87,9 +87,9 @@
 
 
   <!-- Main content -->
-  <main class="section-one">
+  <main class="section-one" id="home">
     <div id="main-bg" class="image-hero-area"></div>
-    <div class="profile">
+    <div class="parallax profile" data-value="6">
       <!-- your Portrait image here -->
       <label class="profile__picture-wrapper" title="Boo!">
         <!--<img class="profile__picture-static" src="img/profile-picture-static.png" alt="Mihocsa Szilard Portrait">-->
@@ -103,11 +103,11 @@
       </div> -->
 
       <div class="profile__content">
-        <h1 class="parallax main__heading" data-value="-2"><span>Hello! I`m</span></h1>
-        <h1 class="parallax main__heading" data-value="1"><span class="name-highlight">Mihocsa Szilard,</span></h1>
+        <h1 class="parallax main__heading" data-value="-9"><span>Hello! I`m</span></h1>
+        <h1 class="parallax main__heading" data-value="3"><span class="name-highlight">Mihocsa Szilard,</span></h1>
         <div class="toggler ">
           <h3 class="static-text toggler-row"></h3>
-          <div class="parallax main__paragraph" id="text-wrapper" data-value="3">
+          <div class="parallax main__paragraph" id="text-wrapper" data-value="-15">
             <span id="rotating-text">
               <span class="developer-text">Developer</span>
               <span class="designer-text">Designer</span>
@@ -502,6 +502,7 @@
 
   <span class="custom-cursor"></span>
   <span class="lazy-cursor"></span>
+  <div class="to-top"><a href="#home"><img src="/img/arrow.svg" alt="scrolls to top of the page"></a></div>
 
   <!-- <p style="font-size: 80px; height: 100px; text-align: center; color: var(--darkest-purple);">Bye!</p> -->
 
