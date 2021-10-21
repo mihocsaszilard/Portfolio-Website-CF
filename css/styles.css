@@ -1373,7 +1373,7 @@ progress::-webkit-progress-bar {
   width: 10px;
   height: 10px;
   border: none;
-  transition: 0.02s ease-out;
+  transition: 0.08s ease-out;
   animation: scale 1.5s infinite ease-in-out;
   mix-blend-mode: difference;
 }
