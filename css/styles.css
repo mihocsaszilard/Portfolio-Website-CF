@@ -31,7 +31,8 @@ var(--heading-color)
   --heading-color: #e3dfe3;
   --turquoise-hightight: rgb(55, 187, 180);
   --text-color: #564054;
-  --darkest-purple: #110108;
+  --darkest-purple: rgb(16, 1, 1);
+  /* --darkest-purple: #110108; */
   --deep-black: #171717;
   --biggest-font: 42px;
   --big-font-size: 30px;
@@ -65,8 +66,8 @@ html {
 body {
   background-image: linear-gradient(
     to bottom right,
-    rgba(17, 1, 8, 0.9),
-    rgba(17, 1, 8, 1)
+    rgba(6, 1, 1, 0.9),
+    rgba(6, 1, 1, 1)
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
