@@ -1581,7 +1581,7 @@ progress::-webkit-progress-bar {
     margin: 10px auto;
   }
 
-  .page-header {
+  /* .page-header {
     background-image: -webkit-gradient(
       linear,
       right top,
@@ -1599,7 +1599,7 @@ progress::-webkit-progress-bar {
       rgba(29, 0, 27, 1),
       rgba(29, 0, 27, 1)
     );
-  }
+   } */
 
   .page-heading {
     font-size: 22px;
