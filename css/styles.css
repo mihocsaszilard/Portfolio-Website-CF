@@ -171,7 +171,7 @@ main {
 }
 
 .main-about {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -198,8 +198,8 @@ main {
   padding-top: 0;
   display: grid;
   grid-template-columns: 1fr;
-  background-color: rgba(31, 16, 21, 0.8);
-  box-shadow: 0 0 100px 100px rgba(31, 16, 21, 0.825);
+  background-color: var(--darkest-purple);
+  box-shadow: 0 0 100px 100px var(--darkest-purple);
 }
 
 .about-me h1 {
@@ -646,6 +646,7 @@ button:focus,
   margin-bottom: 40px;
   height: 50px;
   border: 1px solid var(--turquoise-hightight);
+  z-index: 999;
 }
 
 .button-img {
@@ -1227,7 +1228,9 @@ progress::-webkit-progress-bar {
   z-index: 1;
   width: 100vw;
   position: relative;
-  left: calc(-50vw + 50%);
+  left: -10%;
+  top: -400px;
+  bottom: 400px;
   height: auto;
   padding: 0;
   margin: 0;
@@ -1252,10 +1255,12 @@ progress::-webkit-progress-bar {
 .hidden {
   opacity: 0;
   right: -100%;
+  transition: 1s;
 }
 
 .visible {
   opacity: 0.5 !important;
+  transition: 1s;
 }
 
 .show {
