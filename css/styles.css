@@ -1013,13 +1013,13 @@ progress::-webkit-progress-bar {
         linear,
         left top,
         left bottom,
-        from(rgba(0, 0, 0, 0.7)),
+        from(rgba(0, 0, 0, 0.3)),
         to(rgba(0, 0, 0, 0.5))
       ),
       url(../img/pokedex.PNG);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/pokedex.PNG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/pokedex.PNG);
     background-position: center;
     background-size: cover;
@@ -1030,13 +1030,13 @@ progress::-webkit-progress-bar {
         linear,
         left top,
         left bottom,
-        from(rgba(0, 0, 0, 0.7)),
+        from(rgba(0, 0, 0, 0.3)),
         to(rgba(0, 0, 0, 0.5))
       ),
       url(../img/pokedex-b.PNG);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/pokedex-b.PNG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/pokedex-b.PNG);
     background-position: center;
     background-size: cover;
@@ -1047,13 +1047,13 @@ progress::-webkit-progress-bar {
         linear,
         left top,
         left bottom,
-        from(rgba(0, 0, 0, 0.7)),
+        from(rgba(0, 0, 0, 0.3)),
         to(rgba(0, 0, 0, 0.5))
       ),
       url(../img/todo.PNG);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/todo.PNG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/todo.PNG);
     background-position: center;
     background-size: cover;
@@ -1064,13 +1064,13 @@ progress::-webkit-progress-bar {
         linear,
         left top,
         left bottom,
-        from(rgba(0, 0, 0, 0.7)),
+        from(rgba(0, 0, 0, 0.3)),
         to(rgba(0, 0, 0, 0.5))
       ),
       url(../img/quote.PNG);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/quote.PNG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/quote.PNG);
     background-position: center;
     background-size: cover;
@@ -1081,13 +1081,13 @@ progress::-webkit-progress-bar {
         linear,
         left top,
         left bottom,
-        from(rgba(0, 0, 0, 0.7)),
+        from(rgba(0, 0, 0, 0.3)),
         to(rgba(0, 0, 0, 0.5))
       ),
       url(../img/markdown.PNG);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/markdown.PNG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/markdown.PNG);
     background-position: center;
     background-size: cover;
@@ -1098,13 +1098,13 @@ progress::-webkit-progress-bar {
         linear,
         left top,
         left bottom,
-        from(rgba(0, 0, 0, 0.7)),
+        from(rgba(0, 0, 0, 0.3)),
         to(rgba(0, 0, 0, 0.5))
       ),
       url(../img/cinemApp.PNG);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/cinemApp.PNG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/cinemApp.PNG);
     background-position: center;
     background-size: cover;
@@ -1115,13 +1115,13 @@ progress::-webkit-progress-bar {
         linear,
         left top,
         left bottom,
-        from(rgba(0, 0, 0, 0.7)),
+        from(rgba(0, 0, 0, 0.3)),
         to(rgba(0, 0, 0, 0.5))
       ),
       url(../img/cinemApp-angular.PNG);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/cinemApp-angular.PNG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/cinemApp-angular.PNG);
     background-position: center;
     background-size: cover;
@@ -1132,13 +1132,13 @@ progress::-webkit-progress-bar {
         linear,
         left top,
         left bottom,
-        from(rgba(0, 0, 0, 0.7)),
+        from(rgba(0, 0, 0, 0.3)),
         to(rgba(0, 0, 0, 0.5))
       ),
       url(../img/meetME.PNG);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/meetME.PNG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/meetME.PNG);
     background-position: center;
     background-size: cover;
@@ -1149,13 +1149,13 @@ progress::-webkit-progress-bar {
         linear,
         left top,
         left bottom,
-        from(rgba(0, 0, 0, 0.7)),
+        from(rgba(0, 0, 0, 0.3)),
         to(rgba(0, 0, 0, 0.5))
       ),
       url(../img/chatME.PNG);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/chatME.PNG);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url(../img/chatME.PNG);
     background-position: center;
     background-size: cover;
@@ -1186,7 +1186,9 @@ progress::-webkit-progress-bar {
     font-size: 42px;
     font-weight: 600;
     color: var(--turquoise-hightight);
-    text-shadow: 10px 10px 10px black;
+    text-shadow: 2px 2px black;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   }
 
   .on-project-title {
