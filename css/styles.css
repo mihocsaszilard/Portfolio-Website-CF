@@ -1377,6 +1377,14 @@ progress::-webkit-progress-bar {
   z-index: 9999;
 }
 
+/*hide cursors on touchscreen*/
+@media screen and (max-width: 768px) {
+  .custom-cursor,
+  .lazy-cursor {
+    display: none;
+  }
+}
+
 .lazy-cursor {
   width: 10px;
   height: 10px;
