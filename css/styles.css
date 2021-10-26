@@ -521,7 +521,7 @@ h3.main__paragraph {
 }
 
 .programmer-text {
-  color: white;
+  color: var(--turquoise-hightight);
   font-family: "Inconsolata", monospace;
 }
 
@@ -777,22 +777,26 @@ button:focus,
   z-index: 9998;
 }
 
+.info-wrapper {
+  position: relative;
+  z-index: 55;
+  margin-top: 150px;
+}
+
 .information {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
+  background-image: url(../img/cover-photo.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 680px;
-  background-color: rgba(10, 1, 1, 0.4);
-  float: right;
-  position: absolute;
-  bottom: -20px;
-  right: 0;
+  margin: auto;
+  width: 90%;
   font-size: 30px;
-  border-radius: 20px;
-  padding-left: 100px;
+  border-radius: 12px 12px 0 0;
+
   box-shadow: 5px 5px 15px rgba(55, 187, 180, 0.3);
+  z-index: 54;
 }
 
 .information img {
@@ -800,13 +804,15 @@ button:focus,
   margin: 10px;
 }
 
-.cover-photo {
+.social-info {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  height: 300px;
+  background-color: rgba(1, 1, 1, 0.7);
+  box-shadow: 0 0 25px rgba(1, 1, 1, 1);
 }
 
 #contact {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .contact-form-wrapper {
@@ -1259,7 +1265,7 @@ progress::-webkit-progress-bar {
 
 /* -------------------SECTION TWO------------------------ */
 .show-more {
-  transform: translateX(-50%) rotate(90deg);
+  transform: translateX(-50%);
   position: fixed;
   bottom: 2%;
   left: 50%;
@@ -1806,6 +1812,9 @@ progress::-webkit-progress-bar {
 }
 
 @media all and (max-width: 1200px) {
+  .show-more {
+    display: none;
+  }
   #projects {
     margin-bottom: 500px;
   }
@@ -1865,7 +1874,7 @@ progress::-webkit-progress-bar {
   }
 
   .main__heading {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   body {
