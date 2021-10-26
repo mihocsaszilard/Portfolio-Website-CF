@@ -531,7 +531,7 @@ h3.main__paragraph {
 }
 
 .developer-text {
-  color: #bb373e;
+  color: white;
   font-family: inherit;
 }
 
@@ -1407,7 +1407,7 @@ progress::-webkit-progress-bar {
 
 /*-----------------------section two end------------------------*/
 .copyright {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   font-size: 14px;
@@ -1562,7 +1562,6 @@ progress::-webkit-progress-bar {
 
 @media all and (min-width: 750px) and (max-width: 1023px) {
   .information {
-    margin-top: 500px;
     padding: 20px;
   }
 
@@ -1583,9 +1582,11 @@ progress::-webkit-progress-bar {
 
 @media all and (max-width: 750px) {
   .information {
-    margin-top: 800px;
+    background-image: var(--deep-black);
     grid-template-columns: 1fr;
     padding: 20px;
+    border-radius: 15px;
+    padding-bottom: 125px;
   }
 
   .about-me__item {
@@ -1802,7 +1803,7 @@ progress::-webkit-progress-bar {
   }
 
   .copyright {
-    display: none;
+    margin-bottom: 70px;
   }
 
   .toProjectsBtn {
@@ -1972,9 +1973,7 @@ progress::-webkit-progress-bar {
   }
 
   .information {
-    height: 400px;
-    margin-bottom: 200px;
-    z-index: 99;
+    margin-bottom: 100px;
   }
 }
 
