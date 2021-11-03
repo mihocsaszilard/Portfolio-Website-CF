@@ -380,7 +380,7 @@ main {
 }
 
 .mobile-nav-list {
-  background-image: var(--background-color);
+  background-color: var(--darkest-purple);
   width: 400px;
   height: 390px;
   text-align: right;
@@ -1761,24 +1761,7 @@ progress::-webkit-progress-bar {
   }
 
   .page__footer {
-    background-image: -webkit-gradient(
-      linear,
-      right top,
-      left top,
-      from(rgba(17, 1, 8, 0.9)),
-      to(rgba(17, 1, 8, 1))
-    );
-
-    background-image: -o-linear-gradient(
-      right,
-      rgba(17, 1, 8, 0.9),
-      rgba(17, 1, 8, 1)
-    );
-    background-image: linear-gradient(
-      to left,
-      rgba(17, 1, 8, 0.9),
-      rgba(17, 1, 8, 1)
-    );
+    background-color: var(--darkest-purple);
     clear: both;
     position: fixed;
     bottom: 0;
