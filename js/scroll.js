@@ -1,4 +1,5 @@
 showPoster = document.getElementById("poster");
+mouse = document.getElementById("mouse");
 bodyBg = document.querySelector(".image-hero-area");
 projectWrapper = document.querySelectorAll(".project-wrapper");
 techStack = document.getElementById("techStack");
@@ -34,14 +35,15 @@ const addProjectBorder = function () {
   });
 };
 
-// const opacityScroll = function () {
-//   const y = window.scrollY;
-//   if (y >= 2600) {
-//     showPoster.className = "visible";
-//   } else {
-//     showPoster.className = "hidden";
-//   }
-// };
+const opacityScroll = function () {
+  const y = window.scrollY;
+  if (y <= 500 || y > 1400) {
+    showPoster.className = "hidden";
+  } else if (y > 500) {
+    showPoster.className = "visible";
+  }
+};
 
 window.addEventListener("scroll", addBg);
+window.addEventListener("scroll", opacityScroll);
 window.addEventListener("scroll", addProjectBorder);
