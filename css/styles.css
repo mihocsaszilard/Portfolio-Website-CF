@@ -1885,6 +1885,10 @@ progress::-webkit-progress-bar {
   #contact {
     margin-top: 200px;
   }
+
+  .stackHeading {
+    padding-top: 150px;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -1951,6 +1955,10 @@ progress::-webkit-progress-bar {
   #techStack div {
     position: relative;
     z-index: 2;
+  }
+
+  .stackHeading {
+    padding-top: 200px;
   }
 
   .project-list__item {
