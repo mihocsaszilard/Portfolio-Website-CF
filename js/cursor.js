@@ -45,7 +45,6 @@ function mouseDownHandler() {
 }
 
 function linkEnterHandler() {
-  link.style.transform = "scale(1.1)";
   cursor.style.transform = "scale(1.5)";
   cursor.style.border = "2px solid rgb(55, 187, 180)";
 }
