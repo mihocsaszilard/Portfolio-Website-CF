@@ -49,6 +49,7 @@ html {
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  cursor: none !important;
 }
 
 ::-webkit-scrollbar {
@@ -117,6 +118,15 @@ main {
   margin: 40px 20px 0;
   z-index: -2;
   height: 80vh;
+}
+
+.workHtml {
+  font-family: "Quicksand", sans-serif;
+  cursor: none !important;
+}
+
+#cinemappCaseStudy {
+  cursor: none !important;
 }
 
 .page-heading {
@@ -278,7 +288,7 @@ main {
   flex-direction: row-reverse;
   transform: translateY(-5px);
   width: 100%;
-  background-color: #392038;
+  background-color: var(--turquoise-hightight);
 }
 
 .navigation-list__item:hover:before,
@@ -611,7 +621,7 @@ button,
   width: 220px;
   font-family: inherit;
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 0;
   text-decoration: none;
   opacity: 0.8;
   transition: 0.2s all ease-in-out;
@@ -809,6 +819,11 @@ button:focus,
   height: 300px;
   background-color: rgba(1, 1, 1, 0.7);
   box-shadow: 0 0 25px rgba(1, 1, 1, 1);
+}
+
+.social-info a,
+.social-info a:visited {
+  color: transparent;
 }
 
 #contact {
@@ -1265,10 +1280,11 @@ progress::-webkit-progress-bar {
 
 /* -------------------SECTION TWO------------------------ */
 .show-more {
-  transform: translateX(-50%);
-  position: fixed;
   bottom: 2%;
   left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+
   width: 100px;
 }
 
@@ -1487,6 +1503,14 @@ progress::-webkit-progress-bar {
   }
 }
 /*-----------------Custom CURSOR end-------------------*/
+
+/*
+----------------cinemApp CASE STUDY-------------------------
+*/
+
+#case-study {
+  cursor: none;
+}
 
 /*
 --------------------Media Queries-------------------
@@ -1968,9 +1992,9 @@ progress::-webkit-progress-bar {
     margin-top: -100px;
   }
 
-  #contact {
+  /* #contact {
     padding-top: 350px;
-  }
+  } */
 
   .information {
     margin-bottom: 100px;
