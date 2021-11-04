@@ -78,8 +78,8 @@
   <main id="case-study">
 
     <div id="hero">
-      <h1 class="page-heading cinemapp-heading">cinemApp<span style="font-size: 20px; margin-left: 20px;"> <span
-            style="margin-right: 20px;"> &#8211; </span>Case
+      <h1 class="page-heading cinemapp-heading">cinemApp<span style="font-size: 20px; margin-left: 20px;">
+          <span style="margin-right: 20px;"> &#8211; </span>Case
           Study</span>
       </h1>
       <img class="cinemapp-hero-img" src="./img/cinemApp-banner.png" alt="banner with movie cover pictures">
@@ -120,8 +120,173 @@
       <div class="cinemapp-study-img-wrapper">
         <img class="cinemapp-study-img" src="./img/cinemApp.PNG" alt="cinemapp- screenshotof movie database">
       </div>
+      <p style="font-size: 15px;"><em>Image1: main view</em></p>
+
+      <div class="approach">
+        <h2>Approach</h2>
+        <h4>Server-side</h4>
+        <div class="ss-wrapper">
+          <p>The skeleton of the project is the server-side, here is every single piece of data stored. I created a
+            RESTful
+            API using Node.js and Express.js that interacts with MongoDB, a non-relational database. The HTTP methods
+            like
+            GET, POST, or PUT give us access to the API and are secured with JWT (token-based) authentication.
+            To receive, store, and edit data in the database we use CRUD methods which are: create, read, update, and
+            delete, the four basic operations of persistent storage. These methods are connected with different <a
+              class="link" href="https://cinemapp-backend.herokuapp.com/documentation">endpoints</a>
+            receiving and sending data in JSON format.
+            During development, these endpoints were regularly tested with Postman.
+          </p>
+
+          <div class="img-container">
+            <img src="./img/movies-title-endpoint.PNG" alt="postman logo">
+            <p style="font-size: 15px;"><em> Image2: GET movie by title response example</em></p>
+          </div>
+
+        </div>
+        <p style="margin-top: 50px;">After completing all the tests and the server-side development successfully, I
+          started to build the user
+          interface.</p>
+
+        <h4>Client-side</h4>
+        <p> <span> cinemApp</span> is a responsive SPA (single-page application) based on the existing server-side code
+          developed with
+          one of the most popular JavaScript frameworks, React and Redux that helps in state management. During the
+          development process, I created several components or views to give the application a user-friendly and
+          easy-to-use interface.</p>
+
+        <div class="cs-wrapper">
+          <div class="img-container">
+            <img src="./img/flowchart.PNG" alt="flow chart showing how to add movies to favorites">
+            <p style="font-size: 15px;"><em> Image3: User-flow showing how to add movies to favorites</em></p>
+          </div>
+          <p>When users click on a movie then the movie-view is accessed, contains details about the particular movie,
+            links pointing to the genre, author, and actors, and two buttons, ‘back’ and ‘add to Favorites’.
+            The navigation is also present on every single view (excluded register and login view) and contains links to
+            lists like the list of all movies and actors or the profile view. Accessing profile view users can edit
+            their
+            data and see their favorite movies.
+            The last element of the navigation is the logout button which removes the credentials from local storage and
+            redirects users to the login page.
+          </p>
+        </div>
+      </div>
+      <h2>Challenges</h2>
+      <p>The whole project was a challenge for me, but this is why I enjoyed the development process so much. It took
+        me
+        time to understand how to build the relationship between the back-end and front-end of the project to
+        accomplish
+        error-free cooperation.</p>
+
+      <div class="retrospect">
+        <h2>Retrospect</h2>
+        <p class="retrospect-description">Working on this application helped me to understand the importance of
+          efficient communication and time management. I also learned how to identify, understand and solve problems
+          myself, using the unlimited
+          resources on the internet. </p>
+
+        <h4>What went well?</h4>
+        <div style="display: flex; align-items: center;">
+          <p class="retrospect-description">The favorite part of the project for me was developing the user interface
+            with React. Taking into
+            consideration that I had no prior experience with it, I am satisfied with the final design and with my React
+            skills. I
+            realized to solve any issues I faced with medium effort thanks to my patience and ability to search, find
+            and personalize solutions in order to achieve the desired result.</p>
+          <img class="react-img-case-study" src="./img/react.svg" alt="react logo">
+        </div>
+
+        <h4>What didn’t go well?</h4>
+        <div style="display: flex; align-items: center;">
+          <div class="img-container">
+            <img src="./img/cors-error.png" alt="cross-origin resource sharing error example">
+          </div>
+          <p class="retrospect-description">The most challenging part of the project was to solve CORS (Cross-origin
+            resource sharing) issues during
+            development. CORS is a mechanism that allows restricted resources on a web page to be requested from another
+            domain outside the domain from which the first resource was served. I spent a lot of time reading
+            documentation and articles about it because there were situations when CORS blocked my requests sent from
+            localhost. The
+            solution I found was to disable authorization during development. After completing the project I hosted it
+            on <a class="link" href="https://mihocsaszilard-cinemapp.netlify.app/">Netlify</a> and enabled the
+            authorization, which
+            worked as expected. </p>
+
+        </div>
+
+        <h4>What could be better?</h4>
+        <div>
+          <p class="retrospect-description">I would like to increase the database size by adding more movies to it.
+            I plan to add animations to every view so that when users click on elements the transition between views
+            will be much smoother and the website comes to life.
+          </p>
+        </div>
+      </div>
+
     </section>
 
+    <div>
+      <h1>The final product</h1>
+      <p>After all the difficulties and a lot of fun during the development the result is a minimalist movie database.
+      </p>
+      <p>If you are interested please visit the following resources to learn more about this project.</p>
+      <img src="./img/cinemApp-logo.PNG" alt="cinemapp logo" style="width: 50%;">
+    </div>
+
+    <div class="cinemapp-btn-wrapper">
+      <a href="https://mihocsaszilard-cinemapp.netlify.app/" target="_blank">
+        <button class="btn__secondary link">Live App</button>
+      </a>
+      <a href="https://cinemapp-backend.herokuapp.com/documentation" target="_blank">
+        <button class="btn__secondary link">Documentation</button>
+      </a>
+      <a href="https://github.com/mihocsaszilard/cinemApp-client" target="_blank">
+        <button class="btn__secondary link">GitHub Repo</button>
+      </a>
+    </div>
+
+    <section class="case-study-footer">
+      <div class="info-wrapper" id="contact">
+        <h1 class="page-heading">Contact me!</h1>
+        <div class="information">
+          <div></div>
+          <div class="social-info">
+
+            <h1 class="title">Let's connect</h1>
+            <a class="link" href="mailto:mihocsa48@gmail.com/" target="_blank">
+              <img class="link social-media-phone__icon" src="./img/mail.svg" alt="email me">
+            </a>
+            <!-- Github logo -->
+            <a class="link" href="https://github.com/mihocsaszilard/" target="_blank">
+              <img class="social-media-phone__icon link" src="img/github.svg" alt="GitHub">
+            </a>
+
+            <!-- Codepen logo -->
+            <a class="link" href="https://codepen.io/mihocsa48/" target="_blank">
+              <img class="social-media-phone__icon link" src="img/codepen.svg" alt="CodePen">
+            </a>
+
+            <!-- LinkedIn logo -->
+            <a class="link" href="https://www.linkedin.com/in/mihocsaszilard/" target="_blank">
+              <img class="social-media-phone__icon link" src="img/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <!-- Medium logo -->
+            <a class="link" href="https://medium.com/@mihocsa48" target="_blank">
+              <img class="social-media-phone__icon link" src="img/medium.svg" alt="CodePen">
+            </a>
+
+            <!-- Twitter logo -->
+            <a class="link" href="https://twitter.com/MihocsaS" target="_blank">
+              <img class="social-media-phone__icon link" src="img/twitter.svg" alt="LinkedIn">
+            </a>
+
+          </div>
+        </div>
+        <p class="copyright">&copy; mihocsaszilard 2021</p>
+      </div>
+
+    </section>
 
   </main>
 
@@ -148,7 +313,10 @@
       </li>
     </ul>
   </div>
-
+  <div class="to-top">
+    <a href="#top"><img style="border-radius: 50%;" src="img/arrow.svg" alt="scrolls to top of the page">
+    </a>
+  </div>
   <span class="custom-cursor"></span>
   <span class="lazy-cursor"></span>
   <script src="js/cursor.js"></script>
