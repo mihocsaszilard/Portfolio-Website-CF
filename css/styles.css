@@ -1534,9 +1534,45 @@ progress::-webkit-progress-bar {
 }
 
 .cinemapp-content {
-  height: 2000px;
   background-color: var(--darkest-purple);
   box-shadow: 0 0 50px var(--darkest-purple);
+}
+
+.cinemapp-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--turquoise-hightight);
+}
+
+.cinemapp-content h4 {
+  font-size: 24px;
+  color: var(--turquoise-hightight);
+}
+
+.cinemapp-content p {
+  font-size: 20px;
+}
+
+.cinemapp-content span {
+  box-shadow: inset 0px -3px 0 0 rgba(55, 187, 180, 0.9),
+    inset 0 -6px 0 0px rgba(55, 187, 180, 0.7),
+    inset 0 -9px 0 0px rgba(55, 187, 180, 0.5);
+}
+
+.info-grid {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.cinemapp-study-img-wrapper {
+  box-shadow: 0px 0px 6px 0 rgba(55, 187, 180, 0.5);
+}
+
+.cinemapp-study-img {
+  width: 100%;
+  margin-top: 50px;
 }
 
 /*
