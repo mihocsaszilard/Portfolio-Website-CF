@@ -1,4 +1,5 @@
 showPoster = document.getElementById("poster");
+mouse = document.getElementById("mouse");
 bodyBg = document.querySelector(".image-hero-area");
 projectWrapper = document.querySelectorAll(".project-wrapper");
 techStack = document.getElementById("techStack");

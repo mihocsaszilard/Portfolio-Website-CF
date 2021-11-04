@@ -1280,8 +1280,19 @@ progress::-webkit-progress-bar {
   left: 50%;
   transform: translateX(-50%);
   position: fixed;
+  border-radius: 50%;
+  width: 80px;
+  animation: scroll 1s infinite alternate;
+  z-index: -1;
+}
 
-  width: 100px;
+@keyframes scroll {
+  from {
+    transform: translateY(0px) translateX(-30px);
+  }
+  to {
+    transform: translateY(5px) translateX(-30px);
+  }
 }
 
 .section-two {
@@ -1314,12 +1325,11 @@ progress::-webkit-progress-bar {
 
 .hidden {
   opacity: 0;
-  right: -100%;
   transition: 1s;
 }
 
 .visible {
-  opacity: 0.5 !important;
+  opacity: 0.4 !important;
   transition: 1s;
 }
 
