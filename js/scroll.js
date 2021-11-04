@@ -14,7 +14,7 @@ const addBg = function () {
     bodyBg.style.transition = "1.3s";
   } else if (y >= 1900) {
     bodyBg.style.opacity = 1;
-    document.body.style.backgroundColor = "rgba(55, 187, 180, 1)";
+    document.body.style.backgroundColor = "rgba(10, 1, 1, 0.5)";
   } else if (y < 1900) {
     document.body.style.transition = "1.3s";
     document.body.style.backgroundColor = "transparent";
