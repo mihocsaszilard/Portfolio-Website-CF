@@ -68,7 +68,7 @@ body {
   background-image: linear-gradient(
     to bottom right,
     rgba(6, 1, 1, 0.9),
-    rgba(6, 1, 1, 1)
+    rgba(6, 1, 1, 0.95)
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -122,10 +122,6 @@ main {
 
 .workHtml {
   font-family: "Quicksand", sans-serif;
-  cursor: none !important;
-}
-
-#cinemappCaseStudy {
   cursor: none !important;
 }
 
@@ -1508,8 +1504,29 @@ progress::-webkit-progress-bar {
 ----------------cinemApp CASE STUDY-------------------------
 */
 
+#hero {
+  position: relative;
+}
+
+.cinemapp-hero-img {
+  position: relative;
+  transform: translateX(-12%);
+  z-index: -1;
+}
+
 #case-study {
   cursor: none;
+}
+
+#cinemappCaseStudy {
+  cursor: none !important;
+  background-color: var(--turquoise-hightight);
+}
+
+.cinemapp-content {
+  height: 2000px;
+  background-color: var(--darkest-purple);
+  box-shadow: 0 0 50px var(--darkest-purple);
 }
 
 /*

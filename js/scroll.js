@@ -13,7 +13,7 @@ const addBg = function () {
     bodyBg.style.transition = "1.3s";
   } else if (y >= 1900) {
     bodyBg.style.opacity = 1;
-    document.body.style.backgroundColor = "rgba(55, 187, 180, 1)";
+    document.body.style.backgroundColor = "rgba(10, 1, 1, 0.5)";
   } else if (y < 1900) {
     document.body.style.transition = "1.3s";
     document.body.style.backgroundColor = "transparent";
@@ -34,14 +34,15 @@ const addProjectBorder = function () {
   });
 };
 
-// const opacityScroll = function () {
-//   const y = window.scrollY;
-//   if (y >= 2600) {
-//     showPoster.className = "visible";
-//   } else {
-//     showPoster.className = "hidden";
-//   }
-// };
+const opacityScroll = function () {
+  const y = window.scrollY;
+  if (y <= 500 || y > 1400) {
+    showPoster.className = "hidden";
+  } else if (y > 500) {
+    showPoster.className = "visible";
+  }
+};
 
 window.addEventListener("scroll", addBg);
+window.addEventListener("scroll", opacityScroll);
 window.addEventListener("scroll", addProjectBorder);
