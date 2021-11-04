@@ -1661,9 +1661,15 @@ progress::-webkit-progress-bar {
   background-color: rgba(55, 187, 180, 0.2);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .ss-wrapper,
-  .cs-wrapper,
+  .cs-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .retrospect div {
     display: flex;
     flex-direction: column;
