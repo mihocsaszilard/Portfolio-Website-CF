@@ -1520,6 +1520,7 @@ progress::-webkit-progress-bar {
 
 .cinemapp-hero-img {
   position: relative;
+  width: 130%;
   transform: translateX(-12%);
   z-index: -1;
 }
@@ -1534,9 +1535,149 @@ progress::-webkit-progress-bar {
 }
 
 .cinemapp-content {
-  height: 2000px;
   background-color: var(--darkest-purple);
   box-shadow: 0 0 50px var(--darkest-purple);
+}
+
+.cinemapp-content h2 {
+  margin-top: 100px;
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--turquoise-hightight);
+}
+
+.cinemapp-content h4 {
+  font-size: 24px;
+  color: var(--turquoise-hightight);
+}
+
+.cinemapp-content p {
+  font-size: 20px;
+}
+
+.cinemapp-content a {
+  color: var(--turquoise-hightight);
+  font-weight: 600;
+}
+
+.cinemapp-content span {
+  box-shadow: inset 0px -3px 0 0 rgba(55, 187, 180, 0.9),
+    inset 0 -6px 0 0px rgba(55, 187, 180, 0.7),
+    inset 0 -9px 0 0px rgba(55, 187, 180, 0.5);
+}
+
+.info-grid {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.cinemapp-study-img-wrapper {
+  box-shadow: 0px 0px 6px 0 rgba(55, 187, 180, 0.5);
+}
+
+.cinemapp-study-img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.ss-wrapper,
+.cs-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cs-wrapper .img-container {
+  height: 400px;
+  margin-right: 40px;
+}
+
+.img-container {
+  max-height: 250px;
+  margin: 0 40px;
+  box-shadow: 0 0 15px var(--turquoise-hightight);
+}
+
+.img-container img {
+  height: 100%;
+}
+
+.approach {
+  background-color: rgba(55, 187, 180, 0.1);
+  padding-bottom: 60px;
+}
+
+.retrospect {
+  padding: 0 40px;
+}
+
+.retrospect img {
+  height: 100px;
+  background-color: var(--turquoise-hightight);
+  border-radius: 50%;
+}
+
+.retrospect img:nth-child(1) {
+  border-radius: 0;
+  height: 250px;
+}
+
+.retrospect h4 {
+  width: 300px;
+  font-size: 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--turquoise-hightight);
+}
+
+.react-img-case-study {
+  margin-left: 40px;
+  animation: spin 5s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cinemapp-btn-wrapper {
+  margin-top: 50px;
+}
+
+.cinemapp-btn-wrapper button {
+  color: var(--darkest-purple);
+  background-color: var(--heading-color);
+  font-weight: 600;
+  margin: 10px;
+}
+
+.case-study-footer {
+  width: 130%;
+  transform: translateX(-11.5%);
+  background-color: rgba(55, 187, 180, 0.2);
+}
+
+@media screen and (max-width: 1200px) {
+  .ss-wrapper,
+  .cs-wrapper,
+  .retrospect div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-container img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .retrospect h4 {
+    width: 150px;
+  }
 }
 
 /*
