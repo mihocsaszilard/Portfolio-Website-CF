@@ -1600,6 +1600,11 @@ progress::-webkit-progress-bar {
 
 .img-container img {
   height: 100%;
+  transition: 0.3s;
+}
+
+.img-container img:hover {
+  transform: scale(1.75);
 }
 
 .approach {

@@ -134,7 +134,7 @@
             GET, POST, or PUT give us access to the API and are secured with JWT (token-based) authentication.
             To receive, store, and edit data in the database we use CRUD methods which are: create, read, update, and
             delete, the four basic operations of persistent storage. These methods are connected with different <a
-              class="link" href="https://cinemapp-backend.herokuapp.com/documentation">endpoints</a>
+              class="link" href="https://cinemapp-backend.herokuapp.com/documentation" target="_blank">endpoints</a>
             receiving and sending data in JSON format.
             During development, these endpoints were regularly tested with Postman.
           </p>
@@ -209,9 +209,16 @@
             documentation and articles about it because there were situations when CORS blocked my requests sent from
             localhost. The
             solution I found was to disable authorization during development. After completing the project I hosted it
-            on <a class="link" href="https://mihocsaszilard-cinemapp.netlify.app/">Netlify</a> and enabled the
+            on <a class="link" href="https://mihocsaszilard-cinemapp.netlify.app/" target="_blank">Netlify</a> and
+            enabled the
             authorization, which
-            worked as expected. </p>
+            worked as expected. <br><span style="font-size: 14px; box-shadow: none;">(It may take a few seconds to load
+              the
+              page
+              because Heroku
+              puts the app to sleep after 30 minutes of inactivity.
+              This is what makes your app is slow to load. When the app's dyno is asleep, waking it up may take some
+              time. But after the first load, it starts loading pretty fast because the dyno is active.)</span> </p>
 
         </div>
 
