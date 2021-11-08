@@ -1624,7 +1624,8 @@ progress::-webkit-progress-bar {
 
 .retrospect img:nth-child(1) {
   border-radius: 0;
-  height: 250px;
+  width: 250px;
+  height: auto;
 }
 
 .retrospect h4 {
@@ -1680,7 +1681,7 @@ progress::-webkit-progress-bar {
   }
 
   .img-container img {
-    max-width: 100%;
+    max-width: 98vw;
   }
 }
 
