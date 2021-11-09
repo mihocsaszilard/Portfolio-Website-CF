@@ -1583,6 +1583,7 @@ progress::-webkit-progress-bar {
 
 .ss-wrapper,
 .cs-wrapper {
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
 }
@@ -1610,10 +1611,6 @@ progress::-webkit-progress-bar {
 .approach {
   background-color: rgba(55, 187, 180, 0.1);
   padding-bottom: 60px;
-}
-
-.retrospect {
-  padding: 0 40px;
 }
 
 .retrospect img {
@@ -1671,6 +1668,7 @@ progress::-webkit-progress-bar {
   .cs-wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
   }
 }
 
