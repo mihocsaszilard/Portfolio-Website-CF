@@ -1536,6 +1536,32 @@ progress::-webkit-progress-bar {
 /*-----------------Custom CURSOR end-------------------*/
 
 /*
+--------------------DARK-LIGHT MODE--------------------------
+*/
+
+.dark-light-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-light-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-light-container img {
+  width: 20px;
+  margin: 0 10px;
+}
+
+.dark-light-container img:hover,
+.dark-light-container img:active {
+  transform: scale(1.2);
+}
+
+/*
 ----------------cinemApp CASE STUDY-------------------------
 */
 
