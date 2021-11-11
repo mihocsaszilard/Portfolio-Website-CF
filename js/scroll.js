@@ -44,6 +44,16 @@ const opacityScroll = function () {
   }
 };
 
+const hideMouse = function () {
+  const y = window.scrollY;
+  if (y >= 4000) {
+    mouse.className = "hidden";
+  } else if (y <= 2999) {
+    mouse.className = "visible";
+  }
+};
+
 window.addEventListener("scroll", addBg);
 window.addEventListener("scroll", opacityScroll);
 window.addEventListener("scroll", addProjectBorder);
+window.addEventListener("scroll", hideMouse);
