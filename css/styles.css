@@ -1432,7 +1432,16 @@ progress::-webkit-progress-bar {
   bottom: 0;
   left: 0;
   font-size: 14px;
-  margin: 0;
+  margin: 0 10px;
+}
+
+.footer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 /*-----------------Custom CURSOR-------------------*/
