@@ -1713,6 +1713,25 @@ progress::-webkit-progress-bar {
 }
 
 /*
+---------------------------RESUME------------------------
+*/
+
+#resume {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.resume-img {
+  width: 100%;
+}
+
+.resume-btn {
+  margin: 30px;
+}
+
+/*
 --------------------Media Queries-------------------
 */
 @media all and (min-width: 1023px) and (max-width: 1200px) {
