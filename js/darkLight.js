@@ -1,6 +1,8 @@
 const dark = document.getElementById("dark");
 const light = document.getElementById("light");
 
+//----------------------------impressum and resume mobile view body doesn't change
+
 lightMode = () => {
   var styles = `
 html,
