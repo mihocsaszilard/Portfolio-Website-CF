@@ -10,7 +10,7 @@ html,
 .project-container,
 .project-list__item h3,
 .project-list__item a,
-
+#case-study img,
 .pokedex,
 .pokedex-bootstrap,
 .quote,
