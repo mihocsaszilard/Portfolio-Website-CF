@@ -117,7 +117,7 @@ main {
   position: relative;
   margin: 40px 20px 0;
   z-index: -2;
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 .workHtml {
@@ -167,8 +167,9 @@ main {
 }
 
 .body-about {
+  margin-top: 300px;
   width: 100%;
-  margin-top: 400px;
+  /* margin-top: 400px; */
   /* background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0),
@@ -1014,7 +1015,7 @@ progress::-webkit-progress-bar {
   }
 
   #projects {
-    height: 2200px;
+    /* height: 2200px; */
     z-index: 1;
   }
 
@@ -1775,7 +1776,7 @@ progress::-webkit-progress-bar {
 
   .section-one,
   .profile {
-    height: 70vh;
+    /*height: 70vh;*/
     margin-top: 200px;
   }
 
@@ -1895,26 +1896,6 @@ progress::-webkit-progress-bar {
     padding-top: 30px;
     margin: 10px auto;
   }
-
-  /* .page-header {
-    background-image: -webkit-gradient(
-      linear,
-      right top,
-      left top,
-      from(rgba(29, 0, 27, 1)),
-      to(rgba(29, 0, 27, 1))
-    );
-    background-image: -o-linear-gradient(
-      right,
-      rgba(29, 0, 27, 1),
-      rgba(29, 0, 27, 1)
-    );
-    background-image: linear-gradient(
-      to left,
-      rgba(29, 0, 27, 1),
-      rgba(29, 0, 27, 1)
-    );
-   } */
 
   .page-heading {
     font-size: 22px;
@@ -2071,10 +2052,6 @@ progress::-webkit-progress-bar {
   .show-more {
     display: none;
   }
-  #projects {
-    margin-bottom: 500px;
-    margin-top: 150px;
-  }
 
   .project-wrapper {
     display: flex;
@@ -2116,10 +2093,6 @@ progress::-webkit-progress-bar {
 
   #contact {
     margin-top: 100px;
-  }
-
-  .stackHeading {
-    padding-top: 200px;
   }
 }
 
@@ -2171,10 +2144,10 @@ progress::-webkit-progress-bar {
 
   #projects {
     width: 90vw;
-    margin-top: 650px;
+    /* margin-top: 650px; */
     transform: translateX(-10%);
 
-    margin-bottom: 600px;
+    /* margin-bottom: 600px; */
   }
 
   #techStack {
@@ -2187,10 +2160,6 @@ progress::-webkit-progress-bar {
   #techStack div {
     position: relative;
     z-index: 2;
-  }
-
-  .stackHeading {
-    padding-top: 350px;
   }
 
   .project-list__item {
