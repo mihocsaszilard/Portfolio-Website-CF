@@ -10,7 +10,6 @@ html,
 .project-container,
 .project-list__item h3,
 .project-list__item a,
-#case-study img,
 .pokedex,
 .pokedex-bootstrap,
 .quote,
@@ -51,7 +50,7 @@ html,
 .cinemapp-study-img,
 .cinemapp-study-logo,
 .resume-img,
-.profile__picture-wrapper,
+.profile__picture-wrapper {
   filter: invert(1);
 }
 `;
@@ -111,7 +110,7 @@ darkMode = () => {
   .cinemapp-study-img,
   .cinemapp-study-logo,
   .resume-img,
-  .profile__picture-wrapper{
+  .profile__picture-wrapper {
     filter: invert(0);
   }
   `;
