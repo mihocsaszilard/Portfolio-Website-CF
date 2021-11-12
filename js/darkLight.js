@@ -38,6 +38,7 @@ html,
 
 .image-hero-area {
   background: url(img/bg-homeoffice.png) center center no-repeat;
+  background-image: url(img/bg-homeoffice.png) center center no-repeat;
   background-size: cover;
   filter: invert(1);
 }
@@ -101,6 +102,7 @@ darkMode = () => {
 
   .image-hero-area {
     background: url(img/bg-homeoffice.png) center center no-repeat;
+    background-image: url(img/bg-homeoffice.png) center center no-repeat;
     background-size: cover;
   }
   
