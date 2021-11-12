@@ -5,23 +5,6 @@ projectWrapper = document.querySelectorAll(".project-wrapper");
 techStack = document.getElementById("techStack");
 contact = document.querySelector(".information");
 
-// const addBg = function () {
-//   const y = window.scrollY;
-//   if (y >= 1900 && y <= 3500) {
-//     document.body.style.backgroundColor = "black";
-//     document.body.style.transition = "1.3s";
-//     bodyBg.style.opacity = 0;
-//     bodyBg.style.transition = "1.3s";
-//   } else if (y >= 1900) {
-//     bodyBg.style.opacity = 1;
-//     document.body.style.backgroundColor = "#797979";
-//   } else if (y < 1900) {
-//     document.body.style.transition = "1.3s";
-//     document.body.style.backgroundColor = "transparent";
-//     bodyBg.style.opacity = 1;
-//   }
-// };
-
 const addProjectBorder = function () {
   const y = window.scrollY;
   projectWrapper.forEach(function (element) {
@@ -48,12 +31,11 @@ const hideMouse = function () {
   const y = window.scrollY;
   if (y >= 4000) {
     mouse.className = "hidden";
-  } else if (y <= 2999) {
+  } else if (y <= 3999) {
     mouse.className = "visible";
   }
 };
 
-window.addEventListener("scroll", addBg);
 window.addEventListener("scroll", opacityScroll);
 window.addEventListener("scroll", addProjectBorder);
 window.addEventListener("scroll", hideMouse);
