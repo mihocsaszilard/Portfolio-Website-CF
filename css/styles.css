@@ -310,8 +310,9 @@ main {
 .navigation-list__item,
 .mobile-nav-list__item {
   color: var(--heading-color);
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .navigation-list__item:visited {
