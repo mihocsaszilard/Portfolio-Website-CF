@@ -1277,7 +1277,7 @@ progress::-webkit-progress-bar {
 
 /* -------------------SECTION TWO------------------------ */
 .show-more {
-  bottom: 2%;
+  bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
   position: fixed;
