@@ -14,7 +14,8 @@ html,
 .pokedex-bootstrap,
 .quote,
 .markdown,
-.to-do{
+.to-do, 
+.social-info img {
   filter: invert(1);
 }
 
@@ -36,8 +37,9 @@ html,
 }
 
 .image-hero-area {
-  background: url(img/bg-homeoffice-inverted.png) center center no-repeat;
+  background: url(img/bg-homeoffice.png) center center no-repeat;
   background-size: cover;
+  filter: invert(1);
 }
 
 .#main-bg {
@@ -78,7 +80,8 @@ darkMode = () => {
   .pokedex-bootstrap,
   .quote,
   .markdown,
-  .to-do{
+  .to-do, 
+  .social-info img {
     filter: invert(0);
   }
   
