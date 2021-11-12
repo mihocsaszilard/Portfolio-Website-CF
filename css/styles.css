@@ -1558,9 +1558,14 @@ progress::-webkit-progress-bar {
   margin: 0 10px;
 }
 
-.dark-light-container img:hover,
-.dark-light-container img:active {
-  transform: scale(1.2);
+#dark,
+#light {
+  transition: 0.3s;
+}
+
+#dark:hover,
+#light:hover {
+  transform: scale(1.5);
 }
 
 /*
