@@ -44,6 +44,11 @@ html,
   background-color: #fff;
 }
 
+.information {
+  background-image: url(img/cover-photo-inverted.png);
+  filter: invert(1);
+}
+
 .image-hero-area,
 #poster,
 #hero,
@@ -104,6 +109,11 @@ darkMode = () => {
     color: #ccc;
   }
   
+  .information {
+    background-image: url(img/cover-photo.png);
+    filter: invert(0);
+  }
+
   .image-hero-area,
   #poster,
   #hero,
