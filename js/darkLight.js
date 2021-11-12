@@ -10,7 +10,7 @@ html,
 .project-container,
 .project-list__item h3,
 .project-list__item a,
-.meetME,
+
 .pokedex,
 .pokedex-bootstrap,
 .quote,
@@ -51,7 +51,7 @@ html,
 .cinemapp-study-img,
 .cinemapp-study-logo,
 .resume-img,
-.profile__picture-wrapper{
+.profile__picture-wrapper,
   filter: invert(1);
 }
 `;
