@@ -1871,7 +1871,6 @@ progress::-webkit-progress-bar {
   }
 
   .project-list {
-    display: grid;
     grid-template-columns: 1fr;
     align-items: center;
   }
@@ -2174,7 +2173,7 @@ progress::-webkit-progress-bar {
     width: 90vw;
     margin-top: 650px;
     transform: translateX(-10%);
-    margin-left: 0;
+
     margin-bottom: 600px;
   }
 
@@ -2209,7 +2208,6 @@ progress::-webkit-progress-bar {
 
   .project-details {
     padding-top: 5%;
-    min-width: 90vw;
   }
 
   .project-button {

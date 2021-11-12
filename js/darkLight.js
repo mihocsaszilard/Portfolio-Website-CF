@@ -4,20 +4,52 @@ const light = document.getElementById("light");
 lightMode = () => {
   var styles = `
 html,
-.social-info,
-.cinemapp-heading {
+.cinemapp-heading,
+.project-container,
+.project-list__item h3,
+.project-list__item a,
+.meetME,
+.pokedex,
+.pokedex-bootstrap,
+.quote,
+.markdown,
+.to-do{
   filter: invert(1);
 }
 
-.project-list__item,
-.information,
+@meida and (max-width: 1199px){
+#workHtml,
+#impressumBody {
+  background-image: linear-gradient( to bottom right, #fff, #fff );
+}
+}
+
+@media and (max-width: 1200px){
+#impressumBody {
+  background-image: linear-gradient( to bottom right, #fff, #fff );
+}
+}
+
+.project-description {
+  color: #888;
+}
+
+.image-hero-area {
+  background: url(../img/bg-homeoffice-inverted.png) center center no-repeat;
+  background-size: cover;
+}
+
+.#main-bg {
+  background-color: #fff;
+}
+
 .image-hero-area,
 #poster,
 #hero,
 .cinemapp-study-img,
 .cinemapp-study-logo,
 .resume-img,
-.profile__picture-wrapper {
+.profile__picture-wrapper{
   filter: invert(1);
 }
 `;
@@ -30,20 +62,54 @@ html,
 darkMode = () => {
   var styles = `
   html,
-  .social-info,
-  .cinemapp-heading {
+  .cinemapp-heading,
+  .project-container,
+  .project-description,
+  .project-list__item h3,
+  .project-list__item a,
+  .meetME,
+  .pokedex,
+  .pokedex-bootstrap,
+  .quote,
+  .markdown,
+  .to-do{
     filter: invert(0);
   }
   
-  .project-list__item,
-  .information,
+  @meida and (max-width: 1199px){
+    #workHtml,
+    #impressumBody {
+      background-image: linear-gradient( to bottom right, rgba(6, 1, 1, 0.9), rgba(6, 1, 1, 0.95) );
+    }
+    }
+    
+    @media and (max-width: 1200px){
+    #impressumBody,
+    .impressum{
+      background-image: linear-gradient( to bottom right, rgba(6, 1, 1, 0.9), rgba(6, 1, 1, 0.95) );
+    }
+    }
+
+  .image-hero-area {
+    background: url(../img/bg-homeoffice.png) center center no-repeat;
+    background-size: cover;
+  }
+  
+  .#main-bg {
+    background-color: #222;
+  }
+ 
+  .project-description {
+    color: #ccc;
+  }
+  
   .image-hero-area,
   #poster,
   #hero,
   .cinemapp-study-img,
   .cinemapp-study-logo,
   .resume-img,
-  .profile__picture-wrapper {
+  .profile__picture-wrapper{
     filter: invert(0);
   }
   `;

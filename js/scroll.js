@@ -5,22 +5,22 @@ projectWrapper = document.querySelectorAll(".project-wrapper");
 techStack = document.getElementById("techStack");
 contact = document.querySelector(".information");
 
-const addBg = function () {
-  const y = window.scrollY;
-  if (y >= 1900 && y <= 3500) {
-    document.body.style.backgroundColor = "black";
-    document.body.style.transition = "1.3s";
-    bodyBg.style.opacity = 0;
-    bodyBg.style.transition = "1.3s";
-  } else if (y >= 1900) {
-    bodyBg.style.opacity = 1;
-    document.body.style.backgroundColor = "rgba(10, 1, 1, 0.5)";
-  } else if (y < 1900) {
-    document.body.style.transition = "1.3s";
-    document.body.style.backgroundColor = "transparent";
-    bodyBg.style.opacity = 1;
-  }
-};
+// const addBg = function () {
+//   const y = window.scrollY;
+//   if (y >= 1900 && y <= 3500) {
+//     document.body.style.backgroundColor = "black";
+//     document.body.style.transition = "1.3s";
+//     bodyBg.style.opacity = 0;
+//     bodyBg.style.transition = "1.3s";
+//   } else if (y >= 1900) {
+//     bodyBg.style.opacity = 1;
+//     document.body.style.backgroundColor = "#797979";
+//   } else if (y < 1900) {
+//     document.body.style.transition = "1.3s";
+//     document.body.style.backgroundColor = "transparent";
+//     bodyBg.style.opacity = 1;
+//   }
+// };
 
 const addProjectBorder = function () {
   const y = window.scrollY;

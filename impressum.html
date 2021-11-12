@@ -20,7 +20,7 @@
   <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
 </head>
 
-<body>
+<body id="impressumBody">
   <header class="page-header">
     <!-- your logo here -->
     <a href="index.html"><img class="personal-logo link" src="img/mihocsa-szilard-logo2.svg"
@@ -33,12 +33,16 @@
         <li role="presentation">
           <a class="navigation-list__item link" href="index.html" role="menuitem">Home</a>
         </li>
-        <!-- <li role="presentation">
-          <a class="navigation-list__item" href="work.html" role="menuitem">Projects</a>
+        <li>
+          <div class="dark-light-container">
+            <a id="light" onclick="lightMode()">
+              <img src="img/sun.svg" alt="switch to light mode">
+            </a>
+            <a id="dark" onclick="darkMode()">
+              <img src="img/moon.svg" alt="switch to light mode">
+            </a>
+          </div>
         </li>
-        <li role="presentation">
-          <a class="navigation-list__item" href="contact.html" role="menuitem">Get in Touch!</a>
-        </li> -->
       </ul>
       <!--Mobile navigation-->
       <div class="mobile-nav" id="menu-toggle">
@@ -49,15 +53,7 @@
           <span class="line"></span>
         </div>
         <ul role="menubar" class="mobile-nav-list">
-          <!-- <li role="presentation">
-            <a class="mobile-nav-list__item" href="index.html" role="menuitem">Home</a>
-          </li>
-          <li role="presentation">
-            <a class="mobile-nav-list__item" href="about.html" role="menuitem">About</a>
-          </li>
-          <li role="presentation">
-            <a class="mobile-nav-list__item" href="work.html" role="menuitem">Projects</a>
-          </li> -->
+
           <li role="presentation">
             <a class="mobile-nav-list__item" href="index.html" role="menuitem">Home</a>
           </li>
@@ -68,6 +64,16 @@
           <li role="presentation">
             <a class="mobile-nav-list__item" href="https://www.linkedin.com/in/mihocsaszilard/" role="menuitem">
               <img class="social-media-phone__icon" src="img/linkedin.svg" alt="LinkedIn">/Szilard Mihocsa</a>
+          </li>
+          <li style="margin-left: 40px ;">
+            <div class="dark-light-container ">
+              <a id="light" onclick="lightMode()">
+                <img src="img/sun.svg" alt="switch to light mode">
+              </a>
+              <a id="dark" onclick="darkMode()">
+                <img src="img/moon.svg" alt="switch to light mode">
+              </a>
+            </div>
           </li>
         </ul>
       </div>
@@ -134,4 +140,5 @@
   <span class="custom-cursor"></span>
   <span class="lazy-cursor"></span>
   <script src="js/cursor.js"></script>
+  <script src="js/darkLight.js"></script>
 </body>
