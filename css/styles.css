@@ -130,6 +130,7 @@ main {
   text-align: left;
   padding: 10px 30px;
   text-shadow: 1px 2px var(--darkest-purple);
+  margin-top: 100px;
 }
 
 .image-hero-area {
@@ -652,7 +653,6 @@ button:focus,
   text-transform: uppercase;
   background-color: var(--turquoise-hightight);
   color: var(--darkest-purple);
-  margin-bottom: 40px;
   height: 50px;
   border: 1px solid var(--turquoise-hightight);
   z-index: 999;
@@ -788,7 +788,6 @@ button:focus,
 .info-wrapper {
   position: relative;
   z-index: 55;
-  margin-top: 150px;
 }
 
 .information {
@@ -821,10 +820,6 @@ button:focus,
 .social-info a,
 .social-info a:visited {
   color: transparent;
-}
-
-#contact {
-  margin-top: 100px;
 }
 
 .contact-form-wrapper {
@@ -1769,6 +1764,53 @@ progress::-webkit-progress-bar {
 }
 
 /*
+-----------------------Recommendations--------------
+*/
+
+#testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--darkest-purple);
+  padding: 20px 150px;
+  width: 125%;
+  transform: translateX(-10%);
+}
+
+.t-single {
+  margin: 10px;
+  margin-top: 75px;
+}
+
+.testimonials-body {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.recom-link {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  color: var(--turquoise-hightight);
+}
+
+.t-subheading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.t-quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+  width: 300px;
+  opacity: 0.05;
+}
+
+/*
 --------------------Media Queries-------------------
 */
 @media all and (min-width: 1023px) and (max-width: 1200px) {
@@ -1904,7 +1946,7 @@ progress::-webkit-progress-bar {
   }
 
   .page-heading {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 400;
   }
 
@@ -2050,7 +2092,6 @@ progress::-webkit-progress-bar {
 
   .toProjectsBtn {
     margin-top: 20px;
-    margin-bottom: 80px;
   }
 }
 
@@ -2097,8 +2138,13 @@ progress::-webkit-progress-bar {
     margin-bottom: -100px;
   }
 
-  #contact {
-    margin-top: 100px;
+  .t-single {
+    box-shadow: none;
+  }
+
+  #testimonials {
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 }
 
@@ -2205,10 +2251,6 @@ progress::-webkit-progress-bar {
   .contact-form-wrapper {
     margin-top: -100px;
   }
-
-  /* #contact {
-    padding-top: 350px;
-  } */
 
   .information {
     margin-bottom: 100px;

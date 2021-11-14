@@ -15,7 +15,8 @@ html,
 .quote,
 .markdown,
 .to-do, 
-.social-info img {
+.social-info img,
+.t-img {
   filter: invert(1);
 }
 
@@ -82,7 +83,8 @@ darkMode = () => {
   .quote,
   .markdown,
   .to-do, 
-  .social-info img {
+  .social-info img,
+  .t-img {
     filter: invert(0);
   }
   
