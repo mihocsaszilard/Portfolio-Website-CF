@@ -92,7 +92,8 @@ darkMode = () => {
   .to-do, 
   .information,
   .social-info img,
-  .social-info h1   {
+  .social-info h1,
+  .social-info a {
     filter: invert(0);
   }
   
