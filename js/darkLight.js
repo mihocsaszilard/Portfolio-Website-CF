@@ -15,7 +15,9 @@ html,
 .quote,
 .markdown,
 .to-do, 
-.social-info img {
+.information,
+.social-info h1,
+.social-info a  {
   filter: invert(1);
 }
 
@@ -34,6 +36,13 @@ html,
 
 .project-description {
   color: #888;
+  border-bottom: 1px solid  rgb(187, 55, 62, 0.3);
+  
+}
+
+.project-wrapper,
+.information {
+  box-shadow: rgb(187, 55, 62, 0.3) 5px 5px 15px !important;
 }
 
 .image-hero-area {
@@ -48,7 +57,6 @@ html,
 }
 
 .information {
-  background-image: url(img/cover-photo-inverted.png);
   filter: invert(1);
 }
 
@@ -82,7 +90,9 @@ darkMode = () => {
   .quote,
   .markdown,
   .to-do, 
-  .social-info img {
+  .information,
+  .social-info img,
+  .social-info h1   {
     filter: invert(0);
   }
   
@@ -112,11 +122,12 @@ darkMode = () => {
  
   .project-description {
     color: #ccc;
+    border-bottom: 1px solid var(--turquoise-hightight);
   }
-  
+
+  .project-wrapper,
   .information {
-    background-image: url(img/cover-photo.png);
-    filter: invert(0);
+    box-shadow: rgb(55, 187, 180, 0.3) 5px 5px 15px !important;
   }
 
   .image-hero-area,
