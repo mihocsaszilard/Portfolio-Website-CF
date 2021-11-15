@@ -1576,6 +1576,7 @@ progress::-webkit-progress-bar {
   position: relative;
   width: 130%;
   transform: translateX(-12%);
+
   z-index: -1;
 }
 
@@ -1634,6 +1635,12 @@ progress::-webkit-progress-bar {
 .cinemapp-study-img {
   width: 100%;
   margin-top: 50px;
+}
+
+.cinemapp-study-logo {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 
 .ss-wrapper,
