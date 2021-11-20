@@ -1167,6 +1167,40 @@ progress::-webkit-progress-bar {
     background-size: cover;
   }
 
+  .omnifood {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.3)),
+        to(rgba(0, 0, 0, 0.5))
+      ),
+      url(../img/omnifood.PNG);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url(../img/omnifood.PNG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url(../img/omnifood.PNG);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .weather {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.3)),
+        to(rgba(0, 0, 0, 0.5))
+      ),
+      url(../img/weather.PNG);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url(../img/weather.PNG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url(../img/weather.PNG);
+    background-position: center;
+    background-size: cover;
+  }
+
   .chatME {
     background-image: -webkit-gradient(
         linear,
